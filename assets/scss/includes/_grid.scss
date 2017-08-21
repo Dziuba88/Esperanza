@@ -1,0 +1,151 @@
+// Grid Layout
+.container {
+  margin: 0 auto;
+  padding: 0 ($gutter-width / 2);
+  width: 100%;
+  box-sizing: border-box;
+
+  @media #{$tablet-up} {width: $sm-screen - $gutter-width}
+  @media #{$normal-up} {width: $md-screen - $gutter-width}
+}
+
+.row {
+  margin-left: ($gutter-width / -2);
+  margin-right: ($gutter-width / -2);
+  display: flex;
+  flex-wrap: wrap;
+  
+  &.column {flex-direction: column;}
+  &.start {justify-content: flex-start;}
+  &.center {justify-content: center;}
+  &.around {justify-content: space-around;}
+  &.between {justify-content: space-between;}
+  &.end {justify-content: flex-end;}
+  &.top {align-items: flex-start;}
+  &.middle {align-items: center;}
+  &.bottom {align-items: flex-end;}
+  &.nowrap {flex-wrap: nowrap;}
+}
+
+.col {
+  padding: 0 $gutter-width / 2;
+  margin: 0;
+  flex-basis:100%;
+  max-width: 100%;
+  -ms-flex-preferred-size: 100%;
+
+  $i: 1;
+  @while $i <= $num-cols {
+    $perc: unquote((100 / ($num-cols / $i)) + "%");
+    &.xs-#{$i} {
+      flex-basis: $perc;
+      max-width: $perc;
+    }
+    $i: $i + 1;
+  }
+  $i: 1;
+  @while $i <= $num-cols {
+    &.order-xs-#{$i} {order:$i;}
+    $i: $i + 1;
+  }
+  $i: 1;
+  @while $i <= $num-cols {
+    $perc: unquote((100 / ($num-cols / $i)) + "%");
+    &.offset-xs-#{$i} {margin-left: $perc;}
+    $i: $i + 1;
+  }
+
+  /*** TABLET and UP ***/
+  @media #{$tablet-up} {
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.sm-#{$i} {
+        flex-basis: $perc;
+        width: $perc;
+      }
+      $i: $i + 1
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      &.order-sm-#{$i} {order:$i;}
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-sm-#{$i} {margin-left: $perc;}
+      $i: $i + 1;
+    }
+  }
+  /*** NORMAL and UP ***/
+  @media #{$normal-up} {
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.md-#{$i} {
+        flex-basis: $perc;
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      &.order-md-#{$i} {order:$i;}
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-md-#{$i} {margin-left: $perc;}
+      $i: $i + 1;
+    }
+  }
+  /*** LARGE and UP ***/
+  @media #{$large-up} {
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.lg-#{$i} {
+        flex-basis: $perc;
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      &.order-lg-#{$i} {order:$i;}
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-lg-#{$i} {margin-left: $perc;}
+      $i: $i + 1;
+    }
+  }
+  @if $xl-screen-asset == true {
+    @media #{$xlarge-screen} {
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.xl-#{$i} {
+          flex-basis: $perc;
+          width: $perc;
+        }
+        $i: $i + 1;
+      }
+      $i: 1;
+      @while $i <= $num-cols {
+        &.order-xl-#{$i} {order:$i;}
+        $i: $i + 1;
+      }
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-xl-#{$i} {margin-left: $perc;}
+        $i: $i + 1;
+      }      
+    }
+  }
+}

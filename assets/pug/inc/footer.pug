@@ -1,0 +1,96 @@
+// Footer 
+footer.footer-default
+  .container
+    p Sau puteti să sunati pe acest număr
+    p:  a(href="tel:+37360888533") + 373 60 888 533
+    ul.social
+      li: a(href=""): img(src="img/fb.png", alt="")
+      li: a(href=""): img(src="img/od.png", alt="")
+      li: a(href=""): img(src="img/in.png", alt="")
+footer.footer-fixed
+  span + 373 60 888 533
+  button.btn.btn-accent.popup-form(href="#sunet") Заказать консультацию
+// End Footer 
+// Modals
+#login.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h1 Авторизация
+  form(action="").dialog-form.validate-form
+    .input-row
+      input(type="email" required placeholder="E-mail" name="login-email")#login-email
+    .input-row
+      input(type="password" required placeholder="Пароль" name="login-pass")#login-pass
+    .input-row
+      button.btn.btn-accent.btn-block Войти
+    a(href="#recovery").popup-form Забыли пароль?
+#recovery.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h1 Восстановление пароля
+  form(action="").dialog-form.validate-form
+    .input-row
+      input(type="email" required placeholder="E-mail" name="recovery-email")#recovery-email
+    .input-row
+      button.btn.btn-accent.btn-block Восстановить пароль
+#registration.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h1 Регистрация
+  form(action="").dialog-form.validate-form
+    .input-row
+      .radio-tabs
+        input(type='radio', name='type', checked)#registration-type-1
+        label(for="registration-type-1") Исполнитель
+        input(type='radio', name='type')#registration-type-2
+        label(for="registration-type-2")  Заказчик      
+    .input-row
+      input(type="email" required placeholder="E-mail" name="registration-email")#registration-email
+    .input-row
+      input(type="password" required placeholder="Пароль" name="registration-pass")#registration-pass
+    .input-row
+      button.btn.btn-accent.btn-block Зарегистрироваться
+#request.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h1 Заявка исполнителям
+  form(action="").dialog-form.validate-form
+    .input-row
+      input(type="email" required placeholder="E-mail" name="request-email")#request-email
+    .input-row
+      input(type="tel" required placeholder="Телефон" name="request-phone")#request-phone
+    .input-row
+      select
+        option Выбрать категорию
+        option категория 1
+        option категория 2
+        option категория 3
+        option категория 4
+        option категория 5
+        option категория 6
+        option категория 7
+        option категория 8
+        option категория 9
+    .input-row
+      textarea(name="request-message", cols="30", rows="10" required placeholder="Описание работы:" )#request-message
+    .input-row
+      button.btn.btn-accent.btn-block Отправить
+#sunet.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h1 Comandă un sunet
+  p
+    i.fa.fa-hourglass-2
+    span Răspuns in 15 minute
+  form(action="").dialog-form.validate-form
+    .input-row
+      input(type="text" required placeholder="Numele" name="sunet-name")#sunet-name
+    .input-row
+      input(type="tel" required placeholder="Numărul de telefon" name="sunet-phone")#sunet-phone
+    .input-row
+      button.btn.btn-accent.btn-block Comandă un sunet
+#categories.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h1 Категории работ
+  form(action="").dialog-form.validate-form
+    .input-row
+      .checkbox
+        input(type="checkbox")#cat-1
+        label(for="cat-1") Гарантия на выполненные работы – 3 года
+
+
+
+
+
+    .input-row
+      button.btn.btn-accent.btn-block Comandă un sunet
+// End Modals 

@@ -1,0 +1,25 @@
+block vars
+include ../inc/nav
+doctype html
+html(lang="ru-RU")
+  include ../inc/head
+  body.main__page
+    block header
+    // ImageSlider  
+    section.main__page--slider.owl-carousel
+        div: img(src="img/slide1.jpg", alt="")
+        div: img(src="img/slide2.jpg", alt="")
+        div: img(src="img/slide3.jpg", alt="")
+    // End ImageSlider 
+    include ../inc/catalog-filters
+    
+    
+    
+    
+    // Main Content 
+    block main
+    // End Main Content 
+        
+    include ../inc/footer
+    // Base Scripts 
+    include ../inc/scripts

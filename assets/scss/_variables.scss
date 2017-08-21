@@ -1,0 +1,62 @@
+//== Media Query Ranges
+$sm-screen: 700px !default;
+$md-screen: 1000px !default;
+$lg-screen: 1240px !default;
+$xl-screen: 1600px !default;
+
+//== Enable/Disable EXTRA LARGE SCREEN
+$xl-screen-asset: false !default;
+
+//== MEDIA BREAKPOINTS
+$mobile-screen: "only screen and (max-width : #{$sm-screen - 1})" !default;
+$tablet-screen: "only screen and (min-width : #{$sm-screen}) and (max-width : #{$md-screen - 1})" !default;
+$normal-screen: "only screen and (min-width : #{$md-screen}) and (max-width : #{$lg-screen - 1})" !default;
+$large-screen: "only screen and (min-width : #{$lg-screen}) and (max-width : #{$xl-screen - 1})" !default;
+$xlarge-screen: "only screen and (min-width : #{$xl-screen})" !default;
+
+$tablet-up: "only screen and (min-width : #{$sm-screen})" !default;
+$normal-up: "only screen and (min-width : #{$md-screen})" !default;
+$large-up: "only screen and (min-width : #{$lg-screen})" !default;
+
+$tablet-down: "only screen and (max-width : #{$md-screen - 1})" !default;
+$normal-down: "only screen and (max-width : #{$lg-screen - 1})" !default;
+$large-down: "only screen and (max-width : #{$xl-screen - 1})" !default;
+
+//== Grid
+$num-cols: 12 !default;
+$gutter-width: 30px !default;
+
+//== Colors
+//$base-color:        color($grey, '800') !default;
+//$primary-color:     color($light-green, '600') !default;
+
+//== Typography
+$base-font:             'Roboto', sans-serif !default;
+$base-font_weight:      400 !default;
+$base-font_ratio:       1.333 !default; //example: 1.618 = Golden Ratio
+$headings-line-height:  1.2 !default;
+$headings-font-weight:  500 !default;
+
+$xs-font_size:          13px !default;
+$sm-font_size:          14px !default;
+$md-font_size:          16px !default;
+$lg-font_size:          18px !default;
+$xl-font_size:          20px !default;
+
+$condensed: 'Roboto Condensed', sans-serif !default;
+$normal: 'Roboto', sans-serif !default;
+
+
+$transition: all .3s cubic-bezier(0.4, 0, 0.2, 1) !default;
+
+$c_1: #615c90 !default;
+$c_2: #322e52 !default;
+$c_3: #db5750 !default;
+$c_4: #706e80 !default;
+$c_5: #d6d5e7 !default;
+$c_6: #333144 !default;
+
+
+
+
+

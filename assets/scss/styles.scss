@@ -1,0 +1,19 @@
+// VARIABLES 
+@import "variables";
+// NORMALIZE 
+@import "includes/normalize";
+// BASE STYLES 
+@import "includes/fonts";
+@import "includes/grid";
+@import "includes/typography";
+@import "includes/select";
+@import "includes/carousel";
+@import "includes/magnific";
+
+
+// LAYOUTS 
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/mainpage";
+@import "layouts/catalog";
+

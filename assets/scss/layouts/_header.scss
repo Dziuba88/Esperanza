@@ -1,0 +1,219 @@
+.header {
+  &__top {
+    background-color: $c_2;
+    color: #fff;
+
+    .flexbox {
+      align-items: center;
+    }
+
+    .btn {
+      margin: 0 5px;
+    }
+
+    &--contacts {
+      padding: 8px 0;
+      border-right: 1px solid rgba(#fff, .2);
+      line-height: 34px;
+
+      .phone {
+        margin-right: 20px;
+        font-size: 18px;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &--search {
+      flex: 1;
+      padding: 8px 15px;
+
+      .search-form {
+        display: block;
+        position: relative;
+
+        label {
+          position: absolute;
+          width: 1em;
+          height: 1em;
+          left: .5em;
+          top: 50%;
+          margin-top: -8px;
+          transition: $transition;
+
+          .fa {
+            display: block;
+          }
+        }
+
+        input {
+          display: block;
+          background-color: $c_2;
+          border: 1px solid $c_2; 
+          padding: 0 2em;
+          transition: $transition;
+          color: #fff;
+          height: 34px;
+          border-radius: 6px;
+          width: 100%;
+
+          &:focus {
+            background-color: $c_5;
+            color: $c_2;
+
+            + label {
+              color: $c_2;
+            }
+          }
+        }
+      }
+    }
+
+    &--lang {
+      ul {
+        @extend .flexbox;
+        margin-left: 20px;
+        li {
+          display: block;
+
+          a {
+            display: block;
+            padding: 14px 8px;
+            position: relative;
+
+            &:after {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 6px 5px 0 5px;
+              border-color: $c_2 transparent transparent transparent;
+              margin-left: -5px;
+              transition: $transition;
+            }
+
+
+            svg {
+              width: 22px;
+              height: 22px;
+              display: block;
+            }
+          }
+
+          &.active a, a:hover {
+            &:after {
+              border-color: $c_4 transparent transparent transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    height: 87px;
+  }
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 20px 0;
+  transition: $transition;
+
+  &__wraper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__header {
+    .brand {
+      display: block;
+      position: relative;
+      width: 214px;
+      overflow: hidden;
+
+      svg.togglable {
+        display: block;
+        width: 214px;
+        height: 47px;
+      }
+      svg.icon {
+        display: none;
+        width: 62px;
+        height: 47px;
+        transition: $transition;
+      }
+
+      .slogan {
+        color: $c_3;
+        font-size: 12px;
+        line-height: 1;
+        position: absolute;
+        bottom: 5px;
+        left: 70px;
+        white-space: nowrap;
+
+      }
+    }
+  }
+
+  &__content {
+    @extend .navbar__wraper;
+    flex:1;
+
+    &--left {
+      flex:1;
+      padding: 0 20px;
+    }
+    ul {
+      li {
+        display: inline-block;
+        vertical-align: middle;
+
+        a {
+          display: block;
+          padding: 0 15px;
+          font-size: 22px;
+          line-height: 1;
+          text-decoration: none;
+          color: $c_1;
+
+          &.active,  &:hover {
+            color: $c_2;
+          }
+        }
+      }
+    }
+    .btn {height: 36px;}
+  }
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(#fff, .95);
+  box-shadow: 0 3px 6px rgba(#000, .3); 
+  padding: 15px 0;
+  z-index: 2;
+
+  .navbar__header .brand {
+    width: 48px;
+    .togglable {display: none;}
+    svg.icon {
+      display: block;
+      width: 48px;
+      height: 36px;
+    }
+  }
+}
