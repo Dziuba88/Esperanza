@@ -19,7 +19,7 @@ $arrow_color: $gray !default;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   border-radius: $input_border_radius;
-  border: solid 1px $gray_light; 
+  border: solid 1px $c_5; 
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
@@ -38,34 +38,24 @@ $arrow_color: $gray !default;
   user-select: none;
   white-space: nowrap;
   width: auto;
-  &:hover {
-    border-color: darken($gray_light, 5%);
-  }
-  &:active, &:focus {
-    border-color: $primary_light;
-  }
+
   // Arrow
   &:after { 
-    border-bottom: 2px solid $arrow_color;
-    border-right: 2px solid $arrow_color;
-    content: '';
+    font-family: 'FontAwesome';
+    content: "\f0d7";
     display: block; 
-    height: 5px;
-    margin-top: -4px;
-    pointer-events: none;
-    position: absolute; 
-    right: 12px; 
-    top: 50%; 
-    transform-origin: 66% 66%;
-    transform: rotate(45deg);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: all 0.15s ease-in-out;
-    width: 5px;
+    color: $c_5;
   }
   
   &.open {
     @extend :active;
     &:after {
-      transform: rotate(-135deg);
+      transform: translateY(-50%) rotate(180deg);
     }
     .list {
       opacity: 1;
@@ -129,7 +119,7 @@ $arrow_color: $gray !default;
     transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
     z-index: 9;
     &:hover .option:not(:hover) {
-      background-color: transparent !important;
+      background-color: transparent;
     }
   }
   .option {
@@ -144,10 +134,12 @@ $arrow_color: $gray !default;
     text-align: left;
     transition: all 0.2s;
     &:hover, &.focus, &.selected.focus { 
-      background-color: $gray_lighter;
+      background-color: $c_5;
+      color: $c_1;
     }
     &.selected { 
-      font-weight: bold;
+      color: $c_5 !important;
+      background-color: $c_1 !important;
     }
     &.disabled {
       background-color: transparent;

@@ -4,4 +4,81 @@ block vars
 block header
   include inc/header
 block main
-
+  .catalog__feautered
+    .container
+      .catalog__feautered--tabs
+        h1 Акционные товары
+        .row
+          .col.sm-10.md-8.offset-sm-1.offset-md-2
+            nav: ul
+              li.active: a(aria-controls="catalog__list-1" data-toggle="tab") Легковые
+              li: a(aria-controls="catalog__list-2" data-toggle="tab") Коммерческие
+              li: a(aria-controls="catalog__list-3" data-toggle="tab") Грузовые
+      .tab-content
+        #catalog__list-1.tab-pane.fade.in.active
+          .catalog__list
+            .row
+              - for (var i=1; i<=8; i++)
+                .col.sm-6.md-3
+                  .catalog__list--item
+                    .catalog__list--item__price
+                      span.old-price 2056.00
+                      span.new-price 
+                        span 1500
+                          small .00
+                        span леев
+                    .catalog__list--item__image
+                      img(src="img/item_image(760x760).png", alt="")
+                      .catalog__list--item__control
+                        .number
+                          input(type='text', value='1', min='1')
+                          span.btn.btn-plus: i.fa.fa-angle-up
+                          span.btn.btn-minus: i.fa.fa-angle-down 
+                        button.btn.btn__accent Купить
+                    .catalog__list--item__title
+                      a(href="") 185/75 R-16C Bontyre BT-228
+        #catalog__list-2.tab-pane.fade
+          .catalog__list
+            .row
+              - for (var i=1; i<=6; i++)
+                .col.sm-6.md-3
+                  .catalog__list--item
+                    .catalog__list--item__price
+                      span.old-price 2056.00
+                      span.new-price 
+                        span 1500
+                          small .00
+                        span леев
+                    .catalog__list--item__image
+                      img(src="img/item_image(760x760).png", alt="")
+                      .catalog__list--item__control
+                        .number
+                          input(type='text', value='1', min='1')
+                          span.btn.btn-plus: i.fa.fa-angle-up
+                          span.btn.btn-minus: i.fa.fa-angle-down 
+                        button.btn.btn__accent Купить
+                    .catalog__list--item__title
+                      a(href="") 185/75 R-16C Bontyre BT-228
+        #catalog__list-3.tab-pane.fade
+          .catalog__list
+            .row
+              - for (var i=1; i<=4; i++)
+                .col.sm-6.md-3
+                  .catalog__list--item
+                    .catalog__list--item__price
+                      span.old-price 2056.00
+                      span.new-price 
+                        span 1500
+                          small .00
+                        span леев
+                    .catalog__list--item__image
+                      img(src="img/item_image(760x760).png", alt="")
+                      .catalog__list--item__control
+                        .number
+                          input(type='text', value='1', min='1')
+                          span.btn.btn-plus: i.fa.fa-angle-up
+                          span.btn.btn-minus: i.fa.fa-angle-down 
+                        button.btn.btn__accent Купить
+                    .catalog__list--item__title
+                      a(href="") 185/75 R-16C Bontyre BT-228
+      

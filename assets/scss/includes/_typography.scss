@@ -4,8 +4,6 @@ body {
   color: $c_2;
   overflow-y: scroll;
   background-color: #f5f5f5;
-
-  height: 3000px;
 }
 
 .flexbox {
@@ -56,6 +54,27 @@ a, button {
     display: flex;
   }
 
+
+  &__reset {
+    background-color: transparent;
+    color: $c_4;
+
+    svg {
+      width: .75em;
+      height: .75em;
+      margin-right: 10px;
+      fill: $c_4;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover {
+      color: $c_3;
+      svg {
+        fill: $c_3;
+      }
+    }
+  }
+
   &__normal {
     background-color: $c_1;
     color: #fff;
@@ -91,6 +110,13 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+}
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear;
+  &.in {
+    opacity: 1;
   }
 }
 

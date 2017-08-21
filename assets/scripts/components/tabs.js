@@ -21,7 +21,7 @@
 
   Tab.VERSION = '3.3.7'
 
-  Tab.TRANSITION_DURATION = 150
+  Tab.TRANSITION_DURATION = 350
 
   Tab.prototype.show = function () {
     var $this    = this.element
