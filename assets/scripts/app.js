@@ -18,11 +18,13 @@ $(document).ready(function() {
 
   createSticky($(".navbar"));
 
+  $('.price-sort').click(function (event) {
+    event.preventDefault()
+    $(this).toggleClass('active');
+    return false;
+  });
 
-  $('.catalog__list--item').hover(
-    function(){ $(this).addClass('hover') },
-    function(){ $(this).removeClass('hover') }
-  )
+
   $('.btn-minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
