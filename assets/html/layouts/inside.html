@@ -16,10 +16,13 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col md-3">
-            <div class="footer__copy"><span>© 2017</span><a href="">Esperanza Tyres</a></div><a class="btn" href=""> <i class="fa fa-facebook-official"></i><span>Мы в Facebook</span></a>
+          <div class="col md-3 footer__main">
+            <div class="footer__copy"><span>© 2017</span><a href=""> 
+                <svg class="icon">
+                  <use xlink:href="#logo-footer"></use>
+                </svg><span>Esperanza Tyres</span></a></div><a class="btn" href=""> <i class="fa fa-facebook-official"></i><span>Мы в Facebook</span></a>
           </div>
-          <div class="col md-3 sm-6">
+          <div class="col md-3 sm-4">
             <nav class="footer__nav">
               <ul>
                 <li><a href="">О нас</a></li>
@@ -28,7 +31,7 @@
               </ul>
             </nav>
           </div>
-          <div class="col md-3 sm-6">
+          <div class="col md-3 sm-4">
             <nav class="footer__nav">
               <ul>
                 <li><a href="">Конфиденциальность</a></li>
@@ -37,119 +40,102 @@
               </ul>
             </nav>
           </div>
-          <div class="col md-3">Sau puteti să sunati pe acest număr</div>
+          <div class="col md-3 sm-4">
+            <div class="footer__adress"><a href=""><i class="fa fa-map-marker"></i><span> Адрес на карте</span></a></div>
+            <div class="footer__developer"><span>Разработано в  </span><a href="http://meta.md" target="_blank">www.meta.md</a></div>
+          </div>
         </div>
       </div>
     </footer>
     <!-- End Footer -->
     <!-- Modals-->
-    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="login">
-      <h1>Авторизация</h1>
-      <form class="dialog-form validate-form" action="">
-        <div class="input-row">
-          <input type="email" required placeholder="E-mail" name="login-email" id="login-email">
-        </div>
-        <div class="input-row">
-          <input type="password" required placeholder="Пароль" name="login-pass" id="login-pass">
-        </div>
-        <div class="input-row">
-          <button class="btn btn-accent btn-block">Войти</button>
-        </div><a class="popup-form" href="#recovery">Забыли пароль?</a>
-      </form>
-    </div>
-    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="recovery">
-      <h1>Восстановление пароля</h1>
-      <form class="dialog-form validate-form" action="">
-        <div class="input-row">
-          <input type="email" required placeholder="E-mail" name="recovery-email" id="recovery-email">
-        </div>
-        <div class="input-row">
-          <button class="btn btn-accent btn-block">Восстановить пароль</button>
-        </div>
-      </form>
-    </div>
-    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="registration">
-      <h1>Регистрация</h1>
-      <form class="dialog-form validate-form" action="">
-        <div class="input-row">
-          <div class="radio-tabs">
-            <input type="radio" name="type" checked id="registration-type-1">
-            <label for="registration-type-1">Исполнитель</label>
-            <input type="radio" name="type" id="registration-type-2">
-            <label for="registration-type-2"> Заказчик      </label>
-          </div>
-        </div>
-        <div class="input-row">
-          <input type="email" required placeholder="E-mail" name="registration-email" id="registration-email">
-        </div>
-        <div class="input-row">
-          <input type="password" required placeholder="Пароль" name="registration-pass" id="registration-pass">
-        </div>
-        <div class="input-row">
-          <button class="btn btn-accent btn-block">Зарегистрироваться</button>
-        </div>
-      </form>
-    </div>
-    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="request">
-      <h1>Заявка исполнителям</h1>
-      <form class="dialog-form validate-form" action="">
-        <div class="input-row">
-          <input type="email" required placeholder="E-mail" name="request-email" id="request-email">
-        </div>
-        <div class="input-row">
-          <input type="tel" required placeholder="Телефон" name="request-phone" id="request-phone">
-        </div>
-        <div class="input-row">
-          <select>
-            <option>Выбрать категорию</option>
-            <option>категория 1</option>
-            <option>категория 2</option>
-            <option>категория 3</option>
-            <option>категория 4</option>
-            <option>категория 5</option>
-            <option>категория 6</option>
-            <option>категория 7</option>
-            <option>категория 8</option>
-            <option>категория 9</option>
-          </select>
-        </div>
-        <div class="input-row">
-          <textarea name="request-message" cols="30" rows="10" required placeholder="Описание работы:" id="request-message"></textarea>
-        </div>
-        <div class="input-row">
-          <button class="btn btn-accent btn-block">Отправить</button>
-        </div>
-      </form>
-    </div>
-    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="sunet">
-      <h1>Comandă un sunet</h1>
-      <p><i class="fa fa-hourglass-2"></i><span>Răspuns in 15 minute</span></p>
-      <form class="dialog-form validate-form" action="">
-        <div class="input-row">
-          <input type="text" required placeholder="Numele" name="sunet-name" id="sunet-name">
-        </div>
-        <div class="input-row">
-          <input type="tel" required placeholder="Numărul de telefon" name="sunet-phone" id="sunet-phone">
-        </div>
-        <div class="input-row">
-          <button class="btn btn-accent btn-block">Comandă un sunet</button>
-        </div>
-      </form>
-    </div>
-    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="categories">
-      <h1>Категории работ</h1>
-      <form class="dialog-form validate-form" action="">
-        <div class="input-row">
-          <div class="checkbox">
-            <input type="checkbox" id="cat-1">
-            <label for="cat-1">Гарантия на выполненные работы – 3 года</label>
-          </div>
-        </div>
-        <div class="input-row">
-          <button class="btn btn-accent btn-block">Comandă un sunet</button>
-        </div>
-      </form>
-    </div>
+    <!--#login.zoom-anim-dialog.mfp-hide.dialog.user-forms
+    h1 Авторизация
+    form(action="").dialog-form.validate-form
+      .input-row
+        input(type="email" required placeholder="E-mail" name="login-email")#login-email
+      .input-row
+        input(type="password" required placeholder="Пароль" name="login-pass")#login-pass
+      .input-row
+        button.btn.btn-accent.btn-block Войти
+      a(href="#recovery").popup-form Забыли пароль?
+    -->
+    <!--#recovery.zoom-anim-dialog.mfp-hide.dialog.user-forms
+    h1 Восстановление пароля
+    form(action="").dialog-form.validate-form
+      .input-row
+        input(type="email" required placeholder="E-mail" name="recovery-email")#recovery-email
+      .input-row
+        button.btn.btn-accent.btn-block Восстановить пароль
+    -->
+    <!--#registration.zoom-anim-dialog.mfp-hide.dialog.user-forms
+    h1 Регистрация
+    form(action="").dialog-form.validate-form
+      .input-row
+        .radio-tabs
+          input(type='radio', name='type', checked)#registration-type-1
+          label(for="registration-type-1") Исполнитель
+          input(type='radio', name='type')#registration-type-2
+          label(for="registration-type-2")  Заказчик      
+      .input-row
+        input(type="email" required placeholder="E-mail" name="registration-email")#registration-email
+      .input-row
+        input(type="password" required placeholder="Пароль" name="registration-pass")#registration-pass
+      .input-row
+        button.btn.btn-accent.btn-block Зарегистрироваться
+    -->
+    <!--#request.zoom-anim-dialog.mfp-hide.dialog.user-forms
+    h1 Заявка исполнителям
+    form(action="").dialog-form.validate-form
+      .input-row
+        input(type="email" required placeholder="E-mail" name="request-email")#request-email
+      .input-row
+        input(type="tel" required placeholder="Телефон" name="request-phone")#request-phone
+      .input-row
+        select
+          option Выбрать категорию
+          option категория 1
+          option категория 2
+          option категория 3
+          option категория 4
+          option категория 5
+          option категория 6
+          option категория 7
+          option категория 8
+          option категория 9
+      .input-row
+        textarea(name="request-message", cols="30", rows="10" required placeholder="Описание работы:" )#request-message
+      .input-row
+        button.btn.btn-accent.btn-block Отправить
+    -->
+    <!--#sunet.zoom-anim-dialog.mfp-hide.dialog.user-forms
+    h1 Comandă un sunet
+    p
+      i.fa.fa-hourglass-2
+      span Răspuns in 15 minute
+    form(action="").dialog-form.validate-form
+      .input-row
+        input(type="text" required placeholder="Numele" name="sunet-name")#sunet-name
+      .input-row
+        input(type="tel" required placeholder="Numărul de telefon" name="sunet-phone")#sunet-phone
+      .input-row
+        button.btn.btn-accent.btn-block Comandă un sunet
+    -->
+    <!--#categories.zoom-anim-dialog.mfp-hide.dialog.user-forms
+    h1 Категории работ
+    form(action="").dialog-form.validate-form
+      .input-row
+        .checkbox
+          input(type="checkbox")#cat-1
+          label(for="cat-1") Гарантия на выполненные работы – 3 года
+    
+    
+    
+    
+    
+      .input-row
+        button.btn.btn-accent.btn-block Comandă un sunet
+    -->
     <!-- End Modals -->
     <!-- Base Scripts -->
     <script src="js/jquery.min.js"></script>

@@ -2,32 +2,40 @@
 footer.footer
   .container
     .row
-      .col.md-3
+      .col.md-3.footer__main
         .footer__copy
           span © 2017
-          a(href="") Esperanza Tyres
+          a(href="") 
+            svg.icon: use(xlink:href="#logo-footer")
+            span Esperanza Tyres
         a(href="").btn 
           i.fa.fa-facebook-official
           span Мы в Facebook
-      .col.md-3.sm-6
+      .col.md-3.sm-4
         nav.footer__nav
           ul
             li: a(href="") О нас
             li: a(href="") Условия оплаты
             li: a(href="") Возврат средств
-      .col.md-3.sm-6
+      .col.md-3.sm-4
         nav.footer__nav
           ul
             li: a(href="") Конфиденциальность
             li: a(href="") Вопросы-ответы
             li: a(href="") Контакты
-      .col.md-3 Sau puteti să sunati pe acest număr
+      .col.md-3.sm-4
+        .footer__adress: a(href="")
+          i.fa.fa-map-marker
+          span  Адрес на карте
+        .footer__developer
+          span Разработано в  
+          a(href="http://meta.md" target="_blank") www.meta.md
 
 // End Footer 
 
 
 // Modals
-#login.zoom-anim-dialog.mfp-hide.dialog.user-forms
+//#login.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h1 Авторизация
   form(action="").dialog-form.validate-form
     .input-row
@@ -37,14 +45,14 @@ footer.footer
     .input-row
       button.btn.btn-accent.btn-block Войти
     a(href="#recovery").popup-form Забыли пароль?
-#recovery.zoom-anim-dialog.mfp-hide.dialog.user-forms
+//#recovery.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h1 Восстановление пароля
   form(action="").dialog-form.validate-form
     .input-row
       input(type="email" required placeholder="E-mail" name="recovery-email")#recovery-email
     .input-row
       button.btn.btn-accent.btn-block Восстановить пароль
-#registration.zoom-anim-dialog.mfp-hide.dialog.user-forms
+//#registration.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h1 Регистрация
   form(action="").dialog-form.validate-form
     .input-row
@@ -59,7 +67,7 @@ footer.footer
       input(type="password" required placeholder="Пароль" name="registration-pass")#registration-pass
     .input-row
       button.btn.btn-accent.btn-block Зарегистрироваться
-#request.zoom-anim-dialog.mfp-hide.dialog.user-forms
+//#request.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h1 Заявка исполнителям
   form(action="").dialog-form.validate-form
     .input-row
@@ -82,7 +90,7 @@ footer.footer
       textarea(name="request-message", cols="30", rows="10" required placeholder="Описание работы:" )#request-message
     .input-row
       button.btn.btn-accent.btn-block Отправить
-#sunet.zoom-anim-dialog.mfp-hide.dialog.user-forms
+//#sunet.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h1 Comandă un sunet
   p
     i.fa.fa-hourglass-2
@@ -94,7 +102,7 @@ footer.footer
       input(type="tel" required placeholder="Numărul de telefon" name="sunet-phone")#sunet-phone
     .input-row
       button.btn.btn-accent.btn-block Comandă un sunet
-#categories.zoom-anim-dialog.mfp-hide.dialog.user-forms
+//#categories.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h1 Категории работ
   form(action="").dialog-form.validate-form
     .input-row
