@@ -26,22 +26,6 @@ $large-down: "only screen and (max-width : #{$xl-screen - 1})" !default;
 $num-cols: 12 !default;
 $gutter-width: 30px !default;
 
-//== Colors
-//$base-color:        color($grey, '800') !default;
-//$primary-color:     color($light-green, '600') !default;
-
-//== Typography
-$base-font:             'Roboto', sans-serif !default;
-$base-font_weight:      400 !default;
-$base-font_ratio:       1.333 !default; //example: 1.618 = Golden Ratio
-$headings-line-height:  1.2 !default;
-$headings-font-weight:  500 !default;
-
-$xs-font_size:          13px !default;
-$sm-font_size:          14px !default;
-$md-font_size:          16px !default;
-$lg-font_size:          18px !default;
-$xl-font_size:          20px !default;
 
 $condensed: 'Roboto Condensed', sans-serif !default;
 $normal: 'Roboto', sans-serif !default;

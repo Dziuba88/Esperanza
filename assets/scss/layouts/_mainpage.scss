@@ -82,3 +82,59 @@
 
   }
 }
+
+
+.shop__pluses {
+  text-align: center;
+  padding-top: 40px;
+
+  h2 {
+    margin: 0 0 40px;
+    font-size: 40px;
+    line-height: 1;
+    color: $c_6;
+    font-weight: 400;
+  }
+
+  &--item {
+    padding: 0 15px 20px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      font-family: 'FontAwesome';
+      content: '\f105';
+      left: 100%;
+      top: 12px;
+      margin-left: 7.5px;
+      color: $c_1;
+      font-size: 18px;
+      
+    }
+
+    h3 {
+      color: $c_2;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.2;
+      margin: 0 0 15px;
+      .fa {
+        font-size: 40px;
+        color: $c_1;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    p {
+      font-family: $normal;
+      color: $c_4;
+      margin: 0 0 30px;
+    }
+  }
+
+  .col:last-child &--item:after {display: none;}
+}

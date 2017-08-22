@@ -1,9 +1,11 @@
-extends layouts/main
+extends layouts/inside
 block vars
-  - active__menu = 'Главная'
+  - active__menu = 'Каталог'
 block header
   include inc/header
 block main
+  include inc/catalog-filters
+
   .catalog__feautered
     .container
       .catalog__feautered--tabs
