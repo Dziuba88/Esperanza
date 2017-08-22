@@ -1,2 +1,59 @@
-.footer-default {
+.footer {
+  background-color: $c_6;
+  color: #fff;
+  padding: 20px 0;
+
+  .btn {
+    color: #fff;
+    border: 1px solid #fff;
+    //width: 100%;
+    padding: 10px 30px;
+
+    .fa {
+      margin-right: .5em;
+      display: block;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: $c_6;
+    }
+  }
+
+  &__copy {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    a {
+      color: #fff;
+    }
+  }
+
+  &__nav {
+    padding: 20px 0;
+
+    ul {
+      li {
+        padding-left: 1em;
+        color: $c_4;
+        margin-bottom: 10px;
+        
+        &:last-child {margin-bottom: 0;}
+
+        &:before {
+          content: "\f105";
+          font-family: 'FontAwesome';
+          margin-left: -1em;
+          width: 1em;
+          display: inline-block;
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {color: $c_4;}
+        }
+      }
+    }
+  }
 }

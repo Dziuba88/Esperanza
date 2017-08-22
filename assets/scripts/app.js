@@ -54,6 +54,29 @@ $(document).ready(function() {
     dots: false,
   });
 
+  $('.brands__slider').owlCarousel({
+    loop:true,
+    stagePadding:60,
+    nav: true,
+    navText: ['',''],
+    mouseDrag: false,
+    dots: false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+          margin:60,
+          items:2
+        },
+        1000:{
+          margin:60,
+          items:3
+        }
+    }
+  });
+
   $('.testimonials-slider').owlCarousel({
     items:1,
     //animateOut: 'fadeOut',

@@ -33,3 +33,51 @@
     }
   }
 }
+
+
+.brands {
+  background-color: #fff;
+  padding: 40px 0;
+
+  &__slider {
+    .owl-nav {
+      font-family: 'FontAwesome';
+
+      div {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: $transition;
+        font-size: 40px;
+        line-height: 1;
+        color: $c_5;
+
+        &:hover {
+          color: $c_6;
+        }
+      }
+
+      .owl-prev {
+        left: 0;
+      }
+      .owl-next {
+        right: 0;
+      }
+    }
+
+    .owl-item {
+       a {visibility: hidden;transition: none;}
+
+      &.active a {
+        visibility: visible;
+      }
+    }
+
+  }
+}
