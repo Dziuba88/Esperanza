@@ -1,0 +1,47 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Контакты'
+block header
+  include inc/header
+block main
+  .static
+    .container
+      h1 Контактная информация
+      .static__map#map
+      .static__contacts
+        .row
+          .col.sm-6.static__contacts--header
+            h2 
+              span “ESPERANZA TYRES” SRL
+              small Adresa: MD-2005, mun. Chișinău,
+              small str. Feredeului 12 of. 19
+          .col.sm-6.static__contacts--body
+            dl
+              dt Tel:
+              dd +(373) 22 27-12-33
+              dt Tel/Fax:
+              dd +(373) 22 27-05-34
+              dt Mobil:
+              dd +(373) 068 774 418
+              dt Mobil:
+              dd +(373) 078 858 518
+              dt E-mail:
+              dd: a(href="mailto:tyres@esperanza.md") tyres@esperanza.md
+      h1 Напишите нам
+      form.static__contactform
+        .row
+          .col.sm-6
+            label Имя
+            input(type="text" required)
+          .col.sm-6
+            label E-Mail
+            input(type="email" required)
+          .col.sm-6
+            label Сообщение
+            textarea(name="", cols="30", rows="10",  required)
+          .col.sm-6.static__contactform--controls
+            .g-recaptcha(data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs")
+            button.btn.btn__accent Отправить
+
+
+            

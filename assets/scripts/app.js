@@ -4,6 +4,7 @@ $.get("img/sprite.svg", function(data) {
   div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
   document.body.insertBefore(div, document.body.childNodes[0]);
 });
+
 function createSticky(sticky) {
   if (typeof sticky !== "undefined") {
     var	pos = sticky.offset().top,
@@ -13,6 +14,40 @@ function createSticky(sticky) {
     });			
   }
 };
+
+function initMaps() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: {lat: 47.0262839, lng: 28.8554296},
+    //disableDefaultUI: true,
+    draggable: false,
+    scrollwheel: false
+  });
+
+  var infowindow = new google.maps.InfoWindow({
+      content: '<b>«ESPERANZA TYRES» SRL</b>'
+  });
+  var image = 'img/marker.png';
+  var marker = new google.maps.Marker({
+    position: {lat: 47.0262839, lng: 28.8554296},
+    map: map,
+    icon: image
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+
+  map.addListener('center_changed', function() {
+    window.setTimeout(function() {
+      map.panTo(marker.getPosition());
+    }, 100);
+  });
+};
+
+
+
+
 
 $(document).ready(function() {
 

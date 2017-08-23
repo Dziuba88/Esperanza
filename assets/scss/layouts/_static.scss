@@ -1,0 +1,128 @@
+.static {
+  padding: 40px 0;
+
+  h1 {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 24px;
+  }
+
+    &__map {
+    height: 400px;
+  }
+
+  &__content {
+    padding: 40px 80px;
+    background-color: #fff;
+
+  }
+
+  &__contacts {
+    padding: 0 15px;
+    margin-bottom: 40px;
+    &--header {
+      background-color: $c_1;
+      display: flex;
+      align-items: center;
+
+      h2 {
+        color: #fff;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+
+        span {
+          display: block;
+        }
+
+        small {
+          display: block;
+        }
+      }
+    }
+
+    &--body {
+      background-color: #fff;
+      padding: 40px 0;
+
+      dl {
+        display: block;
+        margin: 0 auto;
+        width: 220px;
+        padding: 0;
+
+        dt, dd {
+          display: inline-block;
+          margin: 0 0 10px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        dt {
+          width: 70px;
+        }
+      }
+    }
+  }
+
+  &__contactform {
+    input, textarea {
+      width: 100%;
+      display: block;
+      resize: none;
+      margin-bottom: 20px;
+      border: 1px solid $c_5;
+      border-radius: 5px;
+      padding: 0 10px;
+      height: 40px;
+      box-shadow: none;
+    }
+    textarea {
+      height: 140px;
+      padding: 5px 10px;
+    }
+    label {
+      display: block;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1;
+      margin-bottom: 5px;
+      color: $c_2;
+    }
+
+    &--controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+
+      .g-recaptcha {
+        padding: 20px 0;
+
+        @media #{$mobile-screen} {
+          padding-top: 0;
+          iframe {
+            transform: scale(.95)
+          }
+        }
+      }
+
+      .btn {
+        width: 304px;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        font-size: 16px;
+        font-weight: 700;
+        @media #{$mobile-screen} {width: 100%;}
+      }
+    }
+  }
+}
