@@ -1,0 +1,112 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Каталог'
+block header
+  include inc/header
+block main
+  include inc/catalog-filters
+  include inc/subscribe
+
+  .container
+    .catalog__nav
+      .row.nowrap
+        .catalog__nav--sort
+          a(href="").price-sort
+            span Цена 
+            i.fa.fa-sort
+          .av-sort
+            input(type="checkbox")#ch-av
+            label(for="ch-av")
+              i.fa.fa-check
+              span В наличии
+        .catalog__nav--layout
+          a(href="catalog-grid.html"): svg.icon: use(xlink:href="#grid-view")
+          a(href="catalog-list.html").active: svg.icon: use(xlink:href="#list-view")
+
+    .catalog__list
+      - for (var i=1; i<=2; i++)
+        .catalog__list--item
+          .row
+            .col.sm-3
+              .catalog__list--item__info
+                .catalog__list--item__price
+                  span.old-price 2056.00
+                  span.new-price 
+                    span 1500
+                      small .00
+                    span леев
+                a(href="catalog-item.html").catalog__list--item__image
+                  img(src="img/item_image(760x760).png", alt="")
+            .col.sm-9
+              .catalog__list--item__content
+                .catalog__list--item__title
+                  a(href="catalog-item.html") 185/75 R-16C Bontyre BT-228
+                .catalog__list--item__text
+                  p Одной из отличительных особенностей всесезонной грузовой шины Bontyre D-730 является прекрасная применяемость. Она обеспечивается широким размерным рядом, который представлен 8 типоразмерами для колес с посадочным диаметром от 16 до 22,5 дюйма. Кроме того, нельзя не отметить достаточно высокую грузоподъемность этой шины, составляющей в зависимости от размерности 1400-3750 кг.
+                .catalog__list--item__control
+                  .number
+                    input(type='text', value='1', min='1')
+                    span.btn.btn-plus: i.fa.fa-angle-up
+                    span.btn.btn-minus: i.fa.fa-angle-down 
+                  button.btn.btn__accent Купить
+      .catalog__list--item.not-available
+        .row
+          .col.sm-3
+            .catalog__list--item__info
+              .catalog__list--item__price
+                span.old-price 2056.00
+                span.new-price 
+                  span 1500
+                    small .00
+                  span леев
+              a(href="catalog-item-none.html").catalog__list--item__image
+                img(src="img/item_image(760x760).png", alt="")
+          .col.sm-9
+            .catalog__list--item__content
+              .catalog__list--item__title
+                a(href="catalog-item.html") 185/75 R-16C Bontyre BT-228
+              .catalog__list--item__text
+                p Одной из отличительных особенностей всесезонной грузовой шины Bontyre D-730 является прекрасная применяемость. Она обеспечивается широким размерным рядом, который представлен 8 типоразмерами для колес с посадочным диаметром от 16 до 22,5 дюйма. Кроме того, нельзя не отметить достаточно высокую грузоподъемность этой шины, составляющей в зависимости от размерности 1400-3750 кг.
+              .catalog__list--item__control
+                .number
+                  input(type='text', value='1', min='1')
+                  span.btn.btn-plus: i.fa.fa-angle-up
+                  span.btn.btn-minus: i.fa.fa-angle-down 
+                button.btn.btn__accent Купить
+      - for (var i=1; i<=5; i++)
+        .catalog__list--item
+          .row
+            .col.sm-3
+              .catalog__list--item__info
+                .catalog__list--item__price
+                  span.old-price 2056.00
+                  span.new-price 
+                    span 1500
+                      small .00
+                    span леев
+                a(href="catalog-item.html").catalog__list--item__image
+                  img(src="img/item_image(760x760).png", alt="")
+            .col.sm-9
+              .catalog__list--item__content
+                .catalog__list--item__title
+                  a(href="catalog-item.html") 185/75 R-16C Bontyre BT-228
+                .catalog__list--item__text
+                  p Одной из отличительных особенностей всесезонной грузовой шины Bontyre D-730 является прекрасная применяемость. Она обеспечивается широким размерным рядом, который представлен 8 типоразмерами для колес с посадочным диаметром от 16 до 22,5 дюйма. Кроме того, нельзя не отметить достаточно высокую грузоподъемность этой шины, составляющей в зависимости от размерности 1400-3750 кг.
+                .catalog__list--item__control
+                  .number
+                    input(type='text', value='1', min='1')
+                    span.btn.btn-plus: i.fa.fa-angle-up
+                    span.btn.btn-minus: i.fa.fa-angle-down 
+                  button.btn.btn__accent Купить
+      .catalog__list--footer
+        nav
+          ul.pagination
+            li.active: span 1
+            li: a(href='#') 2
+            li: a(href='#') 3
+            li: a(href='#') 4
+            li: a(href='#') 5
+  include inc/catalog-similar
+
+
+            

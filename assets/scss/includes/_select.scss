@@ -5,7 +5,7 @@ $font_size_small: 12px !default;
 $input_border_radius: 5px !default;
 $input_height: 42px !default;
 $input_height_small: 36px !default;
-$dropdown_padding: 18px !default;
+$dropdown_padding: 10px !default;
 
 $gray_dark: #444 !default;
 $gray: #999 !default;
@@ -36,8 +36,14 @@ $arrow_color: $gray !default;
   text-align: left !important;
   transition: all 0.2s ease-in-out;
   user-select: none;
-  white-space: nowrap;
   width: auto;
+
+  span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   // Arrow
   &:after { 
@@ -113,7 +119,7 @@ $arrow_color: $gray !default;
     padding: 0;
     pointer-events: none;
     position: absolute;
-    top: 100%; left: 0;
+    top: 100%; left: 0;right: 0;
     transform-origin: 50% 0;
     transform: scale(.75) translateY(- $input_height / 2);
     transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
@@ -129,9 +135,12 @@ $arrow_color: $gray !default;
     list-style: none;
     min-height: $input_height - 2;
     outline: none;
-    padding-left: $dropdown_padding;
-    padding-right: $dropdown_padding + 11;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: left;
+    display: block;
+    margin: 0;
+    width: 100%;
     transition: all 0.2s;
     &:hover, &.focus, &.selected.focus { 
       background-color: $c_5;

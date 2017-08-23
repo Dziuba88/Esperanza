@@ -5,6 +5,7 @@ block header
   include inc/header
 block main
   include inc/catalog-filters
+  include inc/subscribe
 
   .container
     .catalog__nav
@@ -19,8 +20,8 @@ block main
               i.fa.fa-check
               span В наличии
         .catalog__nav--layout
-          a(href="").active: svg.icon: use(xlink:href="#grid-view")
-          a(href=""): svg.icon: use(xlink:href="#list-view")
+          a(href="catalog-grid.html").active: svg.icon: use(xlink:href="#grid-view")
+          a(href="catalog-list.html"): svg.icon: use(xlink:href="#list-view")
 
     .catalog__grid
       .row
@@ -42,7 +43,7 @@ block main
                     span.btn.btn-minus: i.fa.fa-angle-down 
                   button.btn.btn__accent Купить
               .catalog__grid--item__title
-                a(href="") 185/75 R-16C Bontyre BT-228
+                a(href="catalog-item.html") 185/75 R-16C Bontyre BT-228
         .col.sm-6.md-3
           .catalog__grid--item.not-available
             .catalog__grid--item__price
@@ -52,7 +53,7 @@ block main
                   small .00
                 span леев
             .catalog__grid--item__image
-              img(src="img/item_image(760x760).png", alt="")
+              a(href="catalog-item-none.html"): img(src="img/item_image(760x760).png", alt="")
               .catalog__grid--item__control
                 .number
                   input(type='text', value='1', min='1')
@@ -60,7 +61,7 @@ block main
                   span.btn.btn-minus: i.fa.fa-angle-down 
                 button.btn.btn__accent Купить
             .catalog__grid--item__title
-              a(href="") 185/75 R-16C Bontyre BT-228
+              a(href="catalog-item-none.html") 185/75 R-16C Bontyre BT-228
         - for (var i=1; i<=5; i++)
           .col.sm-6.md-3
             .catalog__grid--item
@@ -79,7 +80,7 @@ block main
                     span.btn.btn-minus: i.fa.fa-angle-down 
                   button.btn.btn__accent Купить
               .catalog__grid--item__title
-                a(href="") 185/75 R-16C Bontyre BT-228
+                a(href="catalog-item.html") 185/75 R-16C Bontyre BT-228
       .catalog__grid--footer
         nav
           ul.pagination
@@ -88,6 +89,7 @@ block main
             li: a(href='#') 3
             li: a(href='#') 4
             li: a(href='#') 5
+  include inc/catalog-similar
 
 
             

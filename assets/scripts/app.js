@@ -17,6 +17,7 @@ function createSticky(sticky) {
 $(document).ready(function() {
 
   createSticky($(".navbar"));
+  tippy('.tooltip')
 
   $('.price-sort').click(function (event) {
     event.preventDefault()
@@ -75,6 +76,30 @@ $(document).ready(function() {
         1000:{
           margin:60,
           items:3
+        }
+    }
+  });
+
+
+  $('.catalog__similar--slider').owlCarousel({
+    loop:true,
+    stagePadding:40,
+    nav: true,
+    navText: ['',''],
+    mouseDrag: false,
+    dots: false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+          margin:10,
+          items:2
+        },
+        1000:{
+          margin:10,
+          items:4
         }
     }
   });
@@ -167,10 +192,10 @@ $(document).ready(function() {
     });
   });
 
-	$('.popup-image').magnificPopup({
+	$('.catalog__item--image').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
-		closeBtnInside: false,
+		closeBtnInside: true,
 		fixedContentPos: true,
 		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
 		image: {

@@ -1,0 +1,27 @@
+// CatalogSimilar 
+section.catalog__similar
+  .container
+    h2 Совместимые товары
+    .catalog__similar--slider.owl-carousel
+      - for (var i=1; i<=10; i++)
+        div
+          .catalog__grid--item
+            .catalog__grid--item__price
+              span.old-price 2056.00
+              span.new-price 
+                span 1500
+                  small .00
+                span леев
+            .catalog__grid--item__image
+              img(src="img/item_image(760x760).png", alt="")
+              .catalog__grid--item__control
+                .number
+                  input(type='text', value='1', min='1')
+                  span.btn.btn-plus: i.fa.fa-angle-up
+                  span.btn.btn-minus: i.fa.fa-angle-down 
+                button.btn.btn__accent Купить
+            .catalog__grid--item__title
+              a(href="catalog-item.html") 185/75 R-16C Bontyre BT-228
+
+
+// End CatalogSimilar 

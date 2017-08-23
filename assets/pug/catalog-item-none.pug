@@ -1,0 +1,79 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Каталог'
+block header
+  include inc/header
+block main
+  .container
+    .catalog__item
+      .row
+        .col.md-5.b__pad
+          a(href="img/item_image(760x760).png").catalog__item--image: img(src="img/item_image(760x760).png", alt="")
+
+        .col.md-7.b__pad
+          .catalog__item--info
+            h1.catalog__item--title 315/70 R-22,5 Bontyre D-730
+            .catalog__item--price
+              .row
+                .col.md-7.t__center
+                  .price
+                    span.old-price 2056.00
+                    span.new-price 
+                      span 1500
+                        small .00
+                      span леев
+                  a(href="") Узнать стоимость 1км пробега
+                .col.md-5.t__center
+                  span.availability
+                    i.fa.fa-times
+                    span скоро будет в наличии
+                  button.btn.btn__normal Отправить запрос
+            .catalog__item--indexes
+              .row
+                .col.md-7
+                  dl
+                    dt Индекс нагрузки:
+                    dd 75
+                    dt Индекс скорости:
+                    dd Т
+                    dt Норма слойности:
+                    dd 25
+                .col.md-5
+                  #fb-root
+                  script.
+                    (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+                    fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                  .fb-like(data-href='https://developers.facebook.com/docs/plugins/', data-layout='button_count', data-action='like', data-size='large', data-show-faces='false', data-share='false')
+                .col.md-12
+                  ul
+                    li
+                      span.tyre: svg: use(xlink:href="#tyre-1")
+                      span.index C
+                    li
+                      span.tyre: svg: use(xlink:href="#tyre-2")
+                      span.index A
+                    li
+                      span.tyre: svg: use(xlink:href="#tyre-3")
+                      span.index 71
+        .col.sm-12.b__pad
+          .catalog__item--description
+            h3 Описание шины Bontyre D-730
+            p Одной из отличительных особенностей всесезонной грузовой шины Bontyre D-730 является прекрасная применяемость. Она обеспечивается широким размерным рядом, который представлен 8 типоразмерами для колес с посадочным диаметром от 16 до 22,5 дюйма. Кроме того, нельзя не отметить достаточно высокую грузоподъемность этой шины, составляющей в зависимости от размерности 1400-3750 кг.
+            p Протекторный рисунок для ведущей оси
+            p Данная модель была специально разработана для эксплуатации на ведущих осях грузовых автомобилей, используемых в международных и региональных перевозках. Именно поэтому она получила протекторный рисунок, состоящий из шести рядов отдельных блоков. Увеличенное количество протекторных элементов позволило значительно увеличить количество кромок сцепления, что позволяет шине Bontyre D-730 демонстрировать уверенное поведение на скользких дорогах.
+            p Основные особенности шины Bontyre D-730
+            ul
+              li цельнометаллический каркас придал шине повышенную прочность, обеспечив при этом возможность восстановления протектора;
+              li симметричный ненаправленный рисунок протектора был специально создан с учетом эксплуатации шины на ведущей оси;
+              li множество протекторных блоков обеспечивают отличное сцепление, особенно на скользком покрытии;
+              li открытый дизайн протекторного рисунка позволяет шине демонстрировать прекрасную стойкость к аквапланированию;
+              li низкий уровень шумов, благодаря многошаговому расположению протекторных элементов.
+  include inc/catalog-similar
+
+
+            

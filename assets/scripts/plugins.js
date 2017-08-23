@@ -7,3 +7,4 @@
 //@prepros-append components/jquery.validate.js
 //@prepros-append components/jquery.magnific-popup.js
 //@prepros-append components/tabs.js
+//@prepros-append components/tippy.js
