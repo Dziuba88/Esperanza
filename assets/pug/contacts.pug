@@ -28,17 +28,17 @@ block main
               dt E-mail:
               dd: a(href="mailto:tyres@esperanza.md") tyres@esperanza.md
       h1 Напишите нам
-      form.static__contactform
+      form.static__contactform.validate__form
         .row
           .col.sm-6
             label Имя
-            input(type="text" required)
+            input(type="text" required name="contact-name")
           .col.sm-6
             label E-Mail
-            input(type="email" required)
+            input(type="email" required name="contact-mail")
           .col.sm-6
             label Сообщение
-            textarea(name="", cols="30", rows="10",  required)
+            textarea(cols="30", rows="10",  required, name="contact-message")
           .col.sm-6.static__contactform--controls
             .g-recaptcha(data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs")
             button.btn.btn__accent Отправить
