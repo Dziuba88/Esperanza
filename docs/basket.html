@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Esperanza Tyres | Контакты</title>
+    <title>Esperanza Tyres | Корзина</title>
     <link href="favicon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,400i,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -22,9 +22,8 @@
                 <label for="header-search"><i class="fa fa-search"></i></label>
               </form>
             </div>
-            <div class="header__top--user">
-              <button class="btn btn__normal popup-form" href="#login">Войти</button>
-              <button class="btn btn__normal popup-form" href="#registration">Регистрация</button>
+            <div class="header__top--user"><a class="user__settings"><i class="fa fa-user-o"></i><span>Валерий</span></a>
+              <button class="btn btn__normal">Выйти</button>
             </div>
             <nav class="header__top--lang">
               <ul>
@@ -60,7 +59,7 @@
                     <li><a href="index.html" title="Главная">Главная</a></li>
                     <li><a href="catalog-grid.html" title="Каталог">Каталог</a></li>
                     <li><a href="about.html" title="О нас">О нас</a></li>
-                    <li><a class="active" href="contacts.html" title="Контакты">Контакты</a></li>
+                    <li><a href="contacts.html" title="Контакты">Контакты</a></li>
                   </ul>
                 </nav>
                 <nav class="navbar__content--right"><a class="btn btn__accent" href="basket.html"><i class="fa fa-shopping-cart"></i><span class="count">5</span><span class="text">товаров</span></a></nav>
@@ -72,52 +71,157 @@
     </header>
     <!-- End Header -->
     <!-- Main Content -->
-    <div class="static">
+    <div class="basket">
       <div class="container">
-        <h1>Контактная информация</h1>
-        <div class="static__map" id="map"></div>
-        <div class="static__contacts">
-          <div class="row">
-            <div class="col sm-6 static__contacts--header">
-              <h2> <span>“ESPERANZA TYRES” SRL</span><small>Adresa: MD-2005, mun. Chișinău,</small><small>str. Feredeului 12 of. 19</small></h2>
+        <div class="basket__list">
+          <h1>Корзина</h1>
+          <table class="basket__list--table">
+            <thead>
+              <tr>
+                <th> </th>
+                <th>Название товара</th>
+                <th>Цена (леев)</th>
+                <th>Количество (штук)</th>
+                <th>Общая стоимость (леев)</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                <td>315/70 R-22,5 Bontyre D-730</td>
+                <td>750</td>
+                <td>
+                  <div class="number">
+                    <input type="text" value="4" min="1"><span class="btn btn-plus"><i class="fa fa-angle-up"></i></span><span class="btn btn-minus"><i class="fa fa-angle-down"> </i></span>
+                  </div>
+                </td>
+                <td>3000</td>
+                <td><span class="delete tooltip" title="удалить" data-arrow="true"></span></td>
+              </tr>
+              <tr>
+                <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                <td>315/70 R-22,5 Bontyre D-730</td>
+                <td>750</td>
+                <td>
+                  <div class="number">
+                    <input type="text" value="8" min="1"><span class="btn btn-plus"><i class="fa fa-angle-up"></i></span><span class="btn btn-minus"><i class="fa fa-angle-down"> </i></span>
+                  </div>
+                </td>
+                <td>3000</td>
+                <td><span class="delete tooltip" title="удалить" data-arrow="true"></span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th> </th>
+                <th> </th>
+                <th> </th>
+                <th>Итого: </th>
+                <th>1000000 леев</th>
+                <th></th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="basket__delivery">
+          <h2>Доставка</h2>
+          <nav class="basket__delivery--tabs">
+            <ul>
+              <li class="active"><a aria-controls="delivery-1" data-toggle="tab">Курьер</a></li>
+              <li><a aria-controls="delivery-2" data-toggle="tab">Самовывоз</a></li>
+            </ul>
+          </nav>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="delivery-1">
+              <form class="basket__delivery--form">
+                <div class="row">
+                  <div class="col md-3 offset-md-1 sm-6">
+                    <label>Район</label>
+                    <select>
+                      <option>Район</option>
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                    </select>
+                  </div>
+                  <div class="col md-3 sm-6">
+                    <label>Населенный пункт</label>
+                    <input type="text">
+                  </div>
+                  <div class="col md-4">
+                    <label>Адрес</label>
+                    <input type="text">
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="col sm-6 static__contacts--body">
-              <dl>
-                <dt>Tel:</dt>
-                <dd>+(373) 22 27-12-33</dd>
-                <dt>Tel/Fax:</dt>
-                <dd>+(373) 22 27-05-34</dd>
-                <dt>Mobil:</dt>
-                <dd>+(373) 068 774 418</dd>
-                <dt>Mobil:</dt>
-                <dd>+(373) 078 858 518</dd>
-                <dt>E-mail:</dt>
-                <dd><a href="mailto:tyres@esperanza.md">tyres@esperanza.md</a></dd>
-              </dl>
+            <div class="tab-pane fade t__center" id="delivery-2">
+              <p>Вы можете забрать товар в пн–пт с 9:00 до 19:00 по адресу: str. Feredeului 12 of. 19, mun. Chișinău.</p>
+              <p><a href="contacts.html">Контактная информация</a></p>
             </div>
           </div>
         </div>
-        <h1>Напишите нам</h1>
-        <form class="static__contactform validate__form">
+        <div class="basket__client">
+          <form class="basket__client--form">
+            <div class="row">
+              <div class="col sm-4">
+                <div class="form--row">
+                  <label for="client-email">E-mail</label>
+                  <input type="email" required name="client-email" id="client-email">
+                </div>
+                <div class="form--row">
+                  <label for="client-name">Имя</label>
+                  <input type="text" required name="client-name" id="client-name">
+                </div>
+                <div class="form--row">
+                  <label for="client-phone">Телефон</label>
+                  <input type="tel" required name="client-phone" id="client-phone">
+                </div>
+              </div>
+              <div class="col sm-8">
+                <div class="form--row">
+                  <label for="client-additional">Дополнительная информация</label>
+                  <textarea name="client-additional" cols="30" rows="10" id="client-additional"></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="basket__summary">
           <div class="row">
             <div class="col sm-6">
-              <label>Имя</label>
-              <input type="text" required name="contact-name">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Доставка:</th>
+                    <td>1000 леев</td>
+                  </tr>
+                  <tr class="total">
+                    <th>К оплате:</th>
+                    <td>101000 леев</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="col sm-6">
-              <label>E-Mail</label>
-              <input type="email" required name="contact-mail">
-            </div>
-            <div class="col sm-6">
-              <label>Сообщение</label>
-              <textarea cols="30" rows="10" required name="contact-message"></textarea>
-            </div>
-            <div class="col sm-6 static__contactform--controls">
-              <div class="g-recaptcha" data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs"></div>
-              <button class="btn btn__accent">Отправить</button>
+              <h2>Выберите способ оплаты</h2>
+              <div class="radio-button">
+                <input type="radio" name="payment" checked id="payment1">
+                <label for="payment1">Наличными</label>
+              </div>
+              <div class="radio-button">
+                <input type="radio" name="payment" id="payment2">
+                <label for="payment2">Visa, Mastercard</label>
+              </div>
+              <div class="radio-button">
+                <input type="radio" name="payment" id="payment3">
+                <label for="payment3">По перечислению</label>
+              </div>
             </div>
           </div>
-        </form>
+        </div>
+        <div class="basket__control"><a class="btn btn__accent" href="basket.html">Далее</a></div>
       </div>
     </div>
     <!-- End Main Content -->
@@ -271,8 +375,6 @@
     <!-- Base Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIjN23OujC_NdFfvX4_AuoGBbkx7aHMf0&amp;language=ru&amp;region=RU&amp;callback=initMaps" async defer></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

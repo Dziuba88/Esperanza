@@ -11,6 +11,21 @@
       margin: 0 5px;
     }
 
+
+    &--user {
+      a.user__settings {
+        color: #fff;
+        margin: 0 5px;
+        padding: 5px;
+
+        .fa {margin-right: 5px;}
+
+        &:hover {
+          color: $c_3;
+        }
+      }
+    }
+
     &--contacts {
       padding: 8px 0;
       border-right: 1px solid rgba(#fff, .2);
@@ -157,7 +172,7 @@
         font-size: 12px;
         line-height: 1;
         position: absolute;
-        bottom: 5px;
+        bottom: 0px;
         left: 70px;
         white-space: nowrap;
 

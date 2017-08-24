@@ -1,0 +1,121 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Корзина'
+block header
+  include inc/header2
+block main
+  .basket
+    .container
+      .basket__list
+        h1 Корзина
+        table.basket__list--table
+          thead
+            tr
+              th  
+              th Название товара
+              th Цена (леев)
+              th Количество (штук)
+              th Общая стоимость (леев)
+              th
+          tbody
+            tr
+              td: a(href="catalog-item.html"): img(src="img/item_image(760x760).png", alt="").tooltip(title="подробнее" data-arrow="true")
+              td 315/70 R-22,5 Bontyre D-730
+              td 750
+              td
+                .number
+                  input(type='text', value='4', min='1')
+                  span.btn.btn-plus: i.fa.fa-angle-up
+                  span.btn.btn-minus: i.fa.fa-angle-down 
+              td 3000
+              td: span.delete.tooltip(title="удалить" data-arrow="true")
+            tr
+              td: a(href="catalog-item.html"): img(src="img/item_image(760x760).png", alt="").tooltip(title="подробнее" data-arrow="true")
+              td 315/70 R-22,5 Bontyre D-730
+              td 750
+              td
+                .number
+                  input(type='text', value='8', min='1')
+                  span.btn.btn-plus: i.fa.fa-angle-up
+                  span.btn.btn-minus: i.fa.fa-angle-down 
+              td 3000
+              td: span.delete.tooltip(title="удалить" data-arrow="true")
+          tfoot
+            tr
+              th  
+              th 
+              th 
+              th Итого: 
+              th 1000000 леев
+              th
+
+      .basket__delivery
+        h2 Доставка
+        nav.basket__delivery--tabs
+          ul
+            li.active: a(aria-controls="delivery-1" data-toggle="tab") Курьер
+            li: a(aria-controls="delivery-2" data-toggle="tab") Самовывоз
+        .tab-content
+          #delivery-1.tab-pane.fade.in.active
+            form.basket__delivery--form
+              .row
+                .col.md-3.offset-md-1.sm-6
+                  label Район
+                  select
+                    option Район
+                    option option 1
+                    option option 2
+                    option option 3
+                .col.md-3.sm-6
+                  label Населенный пункт
+                  input(type="text")
+                .col.md-4
+                  label Адрес
+                  input(type="text")
+          #delivery-2.tab-pane.fade.t__center
+            p Вы можете забрать товар в пн–пт с 9:00 до 19:00 по адресу: str. Feredeului 12 of. 19, mun. Chișinău.
+            p: a(href="contacts.html") Контактная информация
+      
+      
+      .basket__client
+        form.basket__client--form
+          .row
+            .col.sm-4
+              .form--row
+                label(for="client-email") E-mail
+                input(type="email" required name="client-email")#client-email
+              .form--row
+                label(for="client-name") Имя
+                input(type="text" required name="client-name")#client-name
+              .form--row
+                label(for="client-phone") Телефон
+                input(type="tel" required name="client-phone")#client-phone
+            .col.sm-8
+              .form--row
+                label(for="client-additional") Дополнительная информация
+                textarea(name="client-additional", cols="30", rows="10")#client-additional
+      .basket__summary
+        .row
+          .col.sm-6
+            table
+              tbody
+                tr
+                  th Доставка:
+                  td 1000 леев
+                tr.total
+                  th К оплате:
+                  td 101000 леев
+          .col.sm-6
+            h2 Выберите способ оплаты
+            .radio-button
+              input(type="radio" name="payment" checked)#payment1
+              label(for="payment1") Наличными
+            .radio-button
+              input(type="radio" name="payment")#payment2
+              label(for="payment2") Visa, Mastercard
+            .radio-button
+              input(type="radio" name="payment")#payment3
+              label(for="payment3") По перечислению
+      .basket__control: a(href="basket.html").btn.btn__accent Далее
+
+            
