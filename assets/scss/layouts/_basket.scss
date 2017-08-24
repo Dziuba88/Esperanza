@@ -17,6 +17,7 @@
       thead {
         background-color: $c_1;
         color: #fff;
+
         th {
           font-family: $normal;
           text-align: left;
@@ -37,10 +38,10 @@
             vertical-align: middle;
 
             &:first-child {
-              padding: 0;
               a {
                 display: block;
                 padding: 5px;
+                margin: -5px;
 
                 &:hover {
                   opacity: .75;
@@ -68,70 +69,70 @@
         }
       }
 
+      .delete {
+        display: block;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        transition: $transition;
+        position: relative;
+        cursor: pointer;
+        opacity: .5;
 
-    }
-  }
+        &:before, &:after {
+          display: block;
+          content: '';
+          background-color: $c_2;
+          transform: rotate(45deg);
+          position: absolute;
+          transition: $transition;
+        }
 
-  .delete {
-    display: block;
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-    transition: $transition;
-    position: relative;
-    cursor: pointer;
-    opacity: .5;
+        &:before {height: 2px;width: 100%;left: 0;top: 50%;margin-top: -1px;}
 
-    &:before, &:after {
-      display: block;
-      content: '';
-      background-color: $c_2;
-      transform: rotate(45deg);
-      position: absolute;
-      transition: $transition;
-    }
+        &:after {width: 2px;height: 100%;top: 0;left: 50%;margin-left: -1px;}
 
-    &:before {height: 2px;width: 100%;left: 0;top: 50%;margin-top: -1px;}
+        &:hover {
+          opacity: 1;
 
-    &:after {width: 2px;height: 100%;top: 0;left: 50%;margin-left: -1px;}
-
-    &:hover {
-      opacity: 1;
-
-      &:before, &:after {background-color: $c_3;}
-    }
-  }
-
-  .number {
-    border: 1px solid $c_5;
-    border-radius: 5px;
-    display: inline-flex;
-    padding: 3px;
-
-    input {
-      background-color: #fff;
-      border: none !important;
-      width: 50px;
-      height: 20px;
-      font-size: 12px;
-      padding: 0 5px;
-    }
-
-    .btn {
-      padding: 0;
-      margin-left: 1px;
-      width: 20px;
-      height: 20px;
-      border-radius: 0;
-      background-color: $c_1;
-      color: #fff;
-
-      &:hover {
-        color: #fff;
-        background-color: $c_3;
+          &:before, &:after {background-color: $c_3;}
+        }
       }
-    }
+
+      .number {
+        border: 1px solid $c_5;
+        border-radius: 5px;
+        display: inline-flex;
+        padding: 3px;
+
+        input {
+          background-color: #fff;
+          border: none !important;
+          width: 50px;
+          height: 20px;
+          font-size: 12px;
+          padding: 0 5px;
+        }
+
+        .btn {
+          padding: 0;
+          margin-left: 1px;
+          width: 20px;
+          height: 20px;
+          border-radius: 0;
+          background-color: $c_1;
+          color: #fff;
+
+          &:hover {
+            color: #fff;
+            background-color: $c_3;
+          }
+        }
+      }
+
+    }// end table
   }
+
 
   &__delivery {
     background-color: #fff;

@@ -151,6 +151,24 @@ $(document).ready(function() {
         }
     }
   });
+  $('.similar__items--slider').owlCarousel({
+    loop:true,
+    stagePadding:40,
+    nav: true,
+    navText: ['',''],
+    mouseDrag: false,
+    dots: false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+          margin:10,
+          items:2
+        }
+    }
+  });
 
   $('.testimonials-slider').owlCarousel({
     items:1,
