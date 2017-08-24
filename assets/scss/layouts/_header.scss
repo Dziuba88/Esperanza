@@ -123,7 +123,6 @@
 .navbar {
   background-color: #fff;
   padding: 20px 0;
-  transition: $transition;
 
   &__wraper {
     display: flex;
@@ -205,7 +204,7 @@
   background-color: rgba(#fff, .95);
   box-shadow: 0 3px 6px rgba(#000, .3); 
   padding: 15px 0;
-  z-index: 99999;
+  z-index: 999;
 
   .navbar__header .brand {
     width: 48px;

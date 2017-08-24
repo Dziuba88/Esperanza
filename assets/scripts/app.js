@@ -53,6 +53,19 @@ $(document).ready(function() {
 
   createSticky($(".navbar"));
   tippy('.tooltip')
+  $('select').niceSelect();
+
+
+  $('.validate__form').each(function() {
+    $(this).validate({
+      focusInvalid: false,
+      errorElement: "span",
+      errorPlacement: function(error, element) {{
+        $( element ).parent().find('label').addClass("error");
+        $( element ).addClass("error");
+      }}
+    });
+  });
 
   $('.price-sort').click(function (event) {
     event.preventDefault()
@@ -69,6 +82,7 @@ $(document).ready(function() {
     $input.change();
     return false;
   });
+
   $('.btn-plus').click(function () {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
@@ -78,7 +92,6 @@ $(document).ready(function() {
 
 
 
-  $('select').niceSelect();
 
   $('.main__page--slider').owlCarousel({
     items:1,
@@ -150,26 +163,7 @@ $(document).ready(function() {
     mouseDrag: false
   });
 
-  $('.counter').countUp();
-
-
-  AOS.init({
-    offset: 200,
-    duration: 600,
-    easing: 'ease-in-sine',
-    delay: 100,
-    disable: 'mobile'
-  });
-
-  $('.validate-form').each(function() {
-    $(this).validate({
-      focusInvalid: false,
-      errorPlacement: function(error, element) {{
-        $( element ).parent().addClass("field-error");
-      }},
-    });
-  });
-
+/*
   var toggleText = function() {
     $('[data-toggle-secondary]').each(function() {
         var $toggle = $(this);
@@ -187,29 +181,33 @@ $(document).ready(function() {
     });
   };
   toggleText();
-
-  $(".navbar__toggle").click(function() {
+*/
+/*  $(".navbar__toggle").click(function() {
     $(this).toggleClass('active');
     $('.navbar-content').toggleClass('open');    
-  });
+  });*/
 
-  $("a").on("click", function(event){
+/*  $("a").on("click", function(event){
     if(this.hash !== ""){
         event.preventDefault();
         $("html, body").animate({scrollTop:$(this.hash).offset().top}, 500);
         //window.location.hash = this.hash;
     }
-  });
+  });*/
 
 	$('.popup-form').magnificPopup({
 		type: 'inline',
 		closeBtnInside: true,
 		preloader: false,
 		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in'
+		mainClass: 'my-mfp-zoom-in',
+    callbacks: {
+      open: function() {$('.navbar.fixed').css('padding-right', '17px');},
+      close: function() {$('.navbar.fixed').css('padding-right', '');}
+    }
   });
   
-  $('.popup-gallery').each(function() {
+  /*$('.popup-gallery').each(function() {
     $(this).magnificPopup({
       delegate: 'a',
       type: 'image',
@@ -225,7 +223,7 @@ $(document).ready(function() {
         verticalFit: true
       }
     });
-  });
+  });*/
 
 	$('.catalog__item--image').magnificPopup({
 		type: 'image',

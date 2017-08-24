@@ -35,38 +35,49 @@ footer.footer
 
 
 // Modals
-//#login.zoom-anim-dialog.mfp-hide.dialog.user-forms
-  h1 Авторизация
-  form(action="").dialog-form.validate-form
-    .input-row
-      input(type="email" required placeholder="E-mail" name="login-email")#login-email
-    .input-row
-      input(type="password" required placeholder="Пароль" name="login-pass")#login-pass
-    .input-row
-      button.btn.btn-accent.btn-block Войти
-    a(href="#recovery").popup-form Забыли пароль?
-//#recovery.zoom-anim-dialog.mfp-hide.dialog.user-forms
-  h1 Восстановление пароля
-  form(action="").dialog-form.validate-form
-    .input-row
-      input(type="email" required placeholder="E-mail" name="recovery-email")#recovery-email
-    .input-row
-      button.btn.btn-accent.btn-block Восстановить пароль
-//#registration.zoom-anim-dialog.mfp-hide.dialog.user-forms
-  h1 Регистрация
-  form(action="").dialog-form.validate-form
-    .input-row
-      .radio-tabs
-        input(type='radio', name='type', checked)#registration-type-1
-        label(for="registration-type-1") Исполнитель
-        input(type='radio', name='type')#registration-type-2
-        label(for="registration-type-2")  Заказчик      
-    .input-row
-      input(type="email" required placeholder="E-mail" name="registration-email")#registration-email
-    .input-row
-      input(type="password" required placeholder="Пароль" name="registration-pass")#registration-pass
-    .input-row
-      button.btn.btn-accent.btn-block Зарегистрироваться
+#login.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Авторизация
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label(for="login-email") E-mail
+      input(type="email" required name="login-email")#login-email
+    .dialog__form--row
+      label(for="login-pass") Пароль
+      input(type="password" required name="login-pass")#login-pass
+    .dialog__form--row.controls
+      button.btn.btn__accent.btn-block Войти
+      .flexbox
+        a(href="#recovery").popup-form Забыли пароль?
+        a(href="#registration").popup-form Регистрация
+#recovery.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Восстановление пароля
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label(for="recovery-email") E-mail
+      input(type="email" required name="recovery-email")#recovery-email
+    .dialog__form--row.controls
+      button.btn.btn__accent.btn-block Восстановить пароль
+#registration.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Регистрация
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label(for="registration-email") E-mail
+      input(type="email" required name="registration-email")#registration-email
+    .dialog__form--row
+      label(for="registration-name") Имя
+      input(type="text" required name="registration-name")#registration-name
+    .dialog__form--row
+      label(for="registration-phone") Телефон
+      input(type="tel" required name="registration-phone")#registration-phone
+    .dialog__form--row
+      label(for="registration-pass") Пароль
+      input(type="password" required name="registration-pass")#registration-pass
+    .dialog__form--row
+      label(for="registration-pass2") Повторите пароль
+      input(type="password" required name="registration-pass2")#registration-pass2
+    .dialog__form--row.controls
+      button.btn.btn__accent.btn-block Зарегистрироваться
+      a(href="#login").popup-form Авторизация
 //#request.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h1 Заявка исполнителям
   form(action="").dialog-form.validate-form

@@ -24,7 +24,14 @@ a, button {
   transition: .3s ease-in-out;
   cursor: pointer;
 }
+a {
+  color: $c_1;
+  text-decoration: none;
 
+  &:hover {
+    color: $c_2;
+  }
+}
 .danger {
   color: $c_3 !important;
 }
