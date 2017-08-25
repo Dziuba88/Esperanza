@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Esperanza Tyres | Корзина</title>
+    <title>Esperanza Tyres | Личный кабинет</title>
     <link href="favicon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,400i,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body class="basket__page">
+  <body class="cabinet">
     <!-- Header -->
     <header class="header">
       <div class="header__top">
@@ -71,157 +71,174 @@
     </header>
     <!-- End Header -->
     <!-- Main Content -->
-    <div class="basket">
+    <div class="cabinet__content">
       <div class="container">
-        <div class="basket__list">
-          <h1>Корзина</h1>
-          <table class="basket__list--table">
-            <thead>
-              <tr>
-                <th> </th>
-                <th>Название товара</th>
-                <th>Цена (леев)</th>
-                <th>Количество (штук)</th>
-                <th>Общая стоимость (леев)</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                <td>315/70 R-22,5 Bontyre D-730</td>
-                <td>750</td>
-                <td>
-                  <div class="number">
-                    <input type="text" value="4" min="1"><span class="btn popup-form" href="#alert"><i class="fa fa-angle-up"></i></span><span class="btn btn-minus"><i class="fa fa-angle-down"> </i></span>
-                  </div>
-                </td>
-                <td>3000</td>
-                <td><span class="delete tooltip" title="удалить" data-arrow="true"></span></td>
-              </tr>
-              <tr>
-                <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                <td>315/70 R-22,5 Bontyre D-730</td>
-                <td>750</td>
-                <td>
-                  <div class="number">
-                    <input type="text" value="8" min="1"><span class="btn btn-plus"><i class="fa fa-angle-up"></i></span><span class="btn btn-minus"><i class="fa fa-angle-down"> </i></span>
-                  </div>
-                </td>
-                <td>3000</td>
-                <td><span class="delete tooltip" title="удалить" data-arrow="true"></span></td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <th> </th>
-                <th> </th>
-                <th> </th>
-                <th>Итого: </th>
-                <th>1000000 леев</th>
-                <th></th>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-        <div class="basket__delivery">
-          <h2>Доставка</h2>
-          <nav class="basket__delivery--tabs">
-            <ul>
-              <li class="active"><a aria-controls="delivery-1" data-toggle="tab">Курьер</a></li>
-              <li><a aria-controls="delivery-2" data-toggle="tab">Самовывоз</a></li>
-            </ul>
-          </nav>
-          <div class="tab-content">
-            <div class="tab-pane fade in active" id="delivery-1">
-              <form class="basket__delivery--form">
-                <div class="row">
-                  <div class="col md-3 offset-md-1 sm-6">
-                    <label>Район</label>
-                    <select>
-                      <option>Район</option>
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                    </select>
-                  </div>
-                  <div class="col md-3 sm-6">
-                    <label>Населенный пункт</label>
-                    <input type="text">
-                  </div>
-                  <div class="col md-4">
-                    <label>Адрес</label>
-                    <input type="text">
+        <nav class="cabinet__content--tabs">
+          <ul>
+            <li class="active"><a aria-controls="cabinet__tab--1" data-toggle="tab">Личные данные</a></li>
+            <li><a aria-controls="cabinet__tab--2" data-toggle="tab">История заказов</a></li>
+          </ul>
+        </nav>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="cabinet__tab--1">
+            <form class="cabinet__form validate__form" action="">
+              <div class="row">
+                <div class="col sm-6 md-5">
+                  <div class="cabinet__form--user">
+                    <div class="form--row">
+                      <label for="client-email">E-mail</label>
+                      <input type="email" required name="client-email" value="olka@meta.md" id="client-email">
+                    </div>
+                    <div class="form--row">
+                      <label for="client-name">Имя</label>
+                      <input type="text" required name="client-name" value="Todiras Radu" id="client-name">
+                    </div>
+                    <div class="form--row">
+                      <label for="client-phone">Телефон</label>
+                      <input type="tel" required name="client-phone" value="068-448-405" id="client-phone">
+                    </div>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="tab-pane fade t__center" id="delivery-2">
-              <p>Вы можете забрать товар в пн–пт с 9:00 до 19:00 по адресу: str. Feredeului 12 of. 19, mun. Chișinău.</p>
-              <p><a href="contacts.html">Контактная информация</a></p>
+                <div class="col sm-6 md-6 offset-md-1">
+                  <div class="cabinet__form--password">
+                    <div class="form--row">
+                      <label for="password-old">Старый пароль</label>
+                      <input type="password" required name="password-old" placeholder="••••" id="password-old">
+                    </div>
+                    <div class="form--row">
+                      <label for="password-new">Новый пароль</label>
+                      <input type="password" required name="password-new" placeholder="••••" id="password-new">
+                    </div>
+                    <div class="form--row">
+                      <label for="password-confirm">Повторите пароль</label>
+                      <input type="password" required name="password-confirm" placeholder="••••" id="password-confirm">
+                    </div>
+                  </div>
+                </div>
+                <div class="col sm-12 cabinet__form--control">
+                  <button class="btn btn__accent">Сохранить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="cabinet__tab--2">
+            <div class="panel-group" role="tablist" aria-multiselectable="true" id="orders">
+              <div class="row panel-group_header">
+                <div class="col md-7">Дата</div>
+                <div class="col md-2">Количество</div>
+                <div class="col md-3">Итого (леев)</div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="tab">
+                  <div class="row">
+                    <div class="col md-7">14.05.2017</div>
+                    <div class="col md-2">8</div>
+                    <div class="col md-2">101000 леев</div>
+                    <div class="col md-1"><a role="button" data-toggle="collapse" data-parent="#orders" href="#order1">!!!</a></div>
+                  </div>
+                </div>
+                <div class="panel-collapse fade collapse" id="order1">
+                  <div class="panel-body">
+                    <table class="order--table">
+                      <thead>
+                        <tr>
+                          <th class="col md-1"> </th>
+                          <th class="col md-3">Название товара</th>
+                          <th class="col md-3">Цена (леев)</th>
+                          <th class="col md-2">Количество (штук)</th>
+                          <th class="col md-3">Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            Итого: 1000000 леев<br>
+                            Доставка: 1000 леев<br>
+                            К оплате: 101000 леев
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="tab">
+                  <div class="row">
+                    <div class="col md-7">14.05.2017</div>
+                    <div class="col md-2">8</div>
+                    <div class="col md-2">101000 леев</div>
+                    <div class="col md-1"><a role="button" data-toggle="collapse" data-parent="#orders" href="#order2">!!!</a></div>
+                  </div>
+                </div>
+                <div class="panel-collapse fade collapse" id="order2">
+                  <div class="panel-body">
+                    <table class="order--table">
+                      <thead>
+                        <tr>
+                          <th class="col md-1"> </th>
+                          <th class="col md-3">Название товара</th>
+                          <th class="col md-3">Цена (леев)</th>
+                          <th class="col md-2">Количество (штук)</th>
+                          <th class="col md-3">Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            Итого: 1000000 леев<br>
+                            Доставка: 1000 леев<br>
+                            К оплате: 101000 леев
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="basket__client">
-          <form class="basket__client--form">
-            <div class="row">
-              <div class="col sm-4">
-                <div class="form--row">
-                  <label for="client-email">E-mail</label>
-                  <input type="email" required name="client-email" id="client-email">
-                </div>
-                <div class="form--row">
-                  <label for="client-name">Имя</label>
-                  <input type="text" required name="client-name" id="client-name">
-                </div>
-                <div class="form--row">
-                  <label for="client-phone">Телефон</label>
-                  <input type="tel" required name="client-phone" id="client-phone">
-                </div>
-              </div>
-              <div class="col sm-8">
-                <div class="form--row">
-                  <label for="client-additional">Дополнительная информация</label>
-                  <textarea name="client-additional" cols="30" rows="10" id="client-additional"></textarea>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="basket__summary">
-          <div class="row">
-            <div class="col sm-6">
-              <table>
-                <tbody>
-                  <tr>
-                    <th>Доставка:</th>
-                    <td>1000 леев</td>
-                  </tr>
-                  <tr class="total">
-                    <th>К оплате:</th>
-                    <td>101000 леев</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col sm-6">
-              <h2>Выберите способ оплаты</h2>
-              <div class="radio-button">
-                <input type="radio" name="payment" checked id="payment1">
-                <label for="payment1">Наличными</label>
-              </div>
-              <div class="radio-button">
-                <input type="radio" name="payment" id="payment2">
-                <label for="payment2">Visa, Mastercard</label>
-              </div>
-              <div class="radio-button">
-                <input type="radio" name="payment" id="payment3">
-                <label for="payment3">По перечислению</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="basket__control"><a class="btn btn__accent" href="messages.html">Далее</a></div>
       </div>
     </div>
     <!-- End Main Content -->

@@ -1,0 +1,70 @@
+.cabinet {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__content {
+    padding: 40px 0;
+    flex: 1;
+
+    &--tabs {
+      ul {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        li {
+          display: block;
+
+          a {
+            display: block;
+            text-align: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            background-color: $c_5;
+            color: $c_1;
+          }
+
+          &.active a, a:hover {
+            color: $c_5;
+            background-color: $c_1;
+          }
+
+          &:first-child a {
+            border-radius: 5px 0 0 5px;
+          }
+
+          &:last-child a {
+            border-radius: 0 5px 5px 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
+    &--user {
+      padding: 40px 0;
+    }
+    &--password {
+      padding: 40px;
+      background-color: #fff;
+    }
+    &--control {
+      padding-top: 30px;
+
+      .btn {
+        height: 40px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: .05em;
+        padding: 0 30px;
+      }
+    }
+  }
+}

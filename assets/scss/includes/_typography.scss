@@ -214,7 +214,18 @@ nav {
   }
 
 }
+.collapse {
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: .35s ease-in-out;
 
+  
+  &.in {
+    opacity: 1;
+    height: auto;
+  }
+}
 
 
 /*
@@ -244,18 +255,7 @@ nav {
 }
 
 
-.collapse {
-  opacity: 0;
-  overflow: hidden;
-  height: 0;
-  transition: .35s ease-in-out;
 
-  
-  &.in {
-    opacity: 1;
-    height: auto;
-  }
-}
 
 
 */
@@ -266,4 +266,13 @@ label.error {
 }
 input.error, textarea.error {
   border-color: $c_3 !important;
+}
+
+
+.order--table {
+  text-align: left;
+  img {display: block;width: 50px;}
+  th, td {
+    padding: 0 15px;
+  }
 }
