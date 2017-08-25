@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Esperanza Tyres | 404</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,400i,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body class="page__404">
+    <div class="container">
+      <div class="page__404--wraper">
+        <div class="row middle">
+          <div class="col md-6"><img src="img/404.png" alt=""></div>
+          <div class="col md-6"><a class="brand" href="index.html">
+              <svg>
+                <use xlink:href="#logo"></use>
+              </svg></a>
+            <h1>Ой, что-то пошло<br>не так!</h1>
+            <h3>Ошибка 404. Нет такой страницы</h3>
+            <p>Если вы считаете, что страницы нет по нашей вине, <a class="popup-form" href="#backcall">напишите нам.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="backcall">
+      <h3 class="dialog__header">Можете связаться по телефону<small class="danger">069534564</small></h3>
+      <p>или оставить заявку,<br>менеджер свяжется с вами в ближайшее время</p>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <!--label(for="backcall-name") Имя-->
+          <input type="text" required name="backcall-name" placeholder="Имя" id="backcall-name">
+        </div>
+        <div class="dialog__form--row">
+          <!--label(for="backcall-phone") Телефон-->
+          <input type="tel" required name="backcall-phone" placeholder="Телефон" id="backcall-phone">
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__accent btn-block">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

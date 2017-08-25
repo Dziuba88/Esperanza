@@ -1,6 +1,7 @@
 extends layouts/inside
 block vars
   - active__menu = 'Корзина'
+  - page_class = 'basket__page'
 block header
   include inc/header2
 block main
@@ -116,6 +117,6 @@ block main
             .radio-button
               input(type="radio" name="payment")#payment3
               label(for="payment3") По перечислению
-      .basket__control: a(href="basket.html").btn.btn__accent Далее
+      .basket__control: a(href="messages.html").btn.btn__accent Далее
 
             

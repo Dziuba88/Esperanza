@@ -1,0 +1,20 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Спасибо за ваш заказ'
+  - page_class = 'message__page'
+block header
+  include inc/header
+block main
+  .message__content
+    .container
+      .message__content--header
+        .icon: i.fa.fa-check
+        h1 Спасибо за ваш заказ
+        p Ваш заказ успешно оформлен
+      .message__content--footer
+        .row
+          .col.sm-6.offset-sm-3
+            p: a(href="message1.html").btn.btn__accent.btn-block 009 thank you
+            p: a(href="message2.html").btn.btn__accent.btn-block 009 thank you cash
+            p: a(href="message3.html").btn.btn__accent.btn-block 011 order fail
+            p: a(href="404.html").btn.btn__accent.btn-block 014 404

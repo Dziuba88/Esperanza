@@ -1,0 +1,34 @@
+- active__menu = '404'
+doctype html
+html(lang="ru-RU")
+  include inc/head
+  body.page__404
+    .container
+      .page__404--wraper
+        .row.middle
+          .col.md-6
+            img(src="img/404.png", alt="")
+          .col.md-6
+            a(href="index.html").brand: svg: use(xlink:href="#logo")
+            h1 Ой, что-то пошло<br>не так!
+            h3 Ошибка 404. Нет такой страницы
+            p Если вы считаете, что страницы нет по нашей вине, 
+              a(href="#backcall").popup-form напишите нам.
+
+    #backcall.zoom-anim-dialog.mfp-hide.dialog.user-forms
+      h3.dialog__header Можете связаться по телефону
+        small.danger 069534564
+      p или оставить заявку,<br>менеджер свяжется с вами в ближайшее время
+      form(action="").dialog__form.validate__form
+        .dialog__form--row
+          //label(for="backcall-name") Имя
+          input(type="text" required name="backcall-name" placeholder="Имя")#backcall-name
+        .dialog__form--row
+          //label(for="backcall-phone") Телефон
+          input(type="tel" required name="backcall-phone" placeholder="Телефон")#backcall-phone
+        .dialog__form--row.controls
+          button.btn.btn__accent.btn-block Отправить
+
+    script(src="js/jquery.min.js")
+    script(src="js/plugins.min.js")
+    script(src="js/app.min.js")

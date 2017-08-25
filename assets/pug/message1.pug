@@ -1,0 +1,31 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Спасибо за ваш заказ'
+  - page_class = 'message__page'
+block header
+  include inc/header
+block main
+  .message__content
+    .container
+      .message__content--header
+        .icon: i.fa.fa-check
+        h1 Спасибо за ваш заказ
+        p Ваш заказ успешно оформлен
+      .message__content--body
+        table
+          tbody
+            tr
+              td Дата:
+              td 
+                span 12.07.2017
+                span 18:23
+            tr
+              td Номер заказа:
+              td 233245
+            tr
+              td Доставка:
+              td 100 леев
+            tr.total
+              td Итого: 
+              td 1000100 леев
+      .message__content--footer: a(href="catalog-grid.html").btn.btn__accent Продолжить покупки

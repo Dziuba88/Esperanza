@@ -1,0 +1,14 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Спасибо за ваш заказ'
+  - page_class = 'message__page'
+block header
+  include inc/header
+block main
+  .message__content
+    .container
+      .message__content--header.fail
+        .icon: i.fa.fa-times
+        h1 Заказ не удался
+        p Что-то пошло не так. Попробуйте еще раз позже.
+      .message__content--footer: a(href="catalog-grid.html").btn.btn__accent Продолжить покупки

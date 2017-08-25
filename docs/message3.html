@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Esperanza Tyres | Контакты</title>
+    <title>Esperanza Tyres | Спасибо за ваш заказ</title>
     <link href="favicon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,400i,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body class="contacts__page">
+  <body class="message__page">
     <!-- Header -->
     <header class="header">
       <div class="header__top">
@@ -60,7 +60,7 @@
                     <li><a href="index.html" title="Главная">Главная</a></li>
                     <li><a href="catalog-grid.html" title="Каталог">Каталог</a></li>
                     <li><a href="about.html" title="О нас">О нас</a></li>
-                    <li><a class="active" href="contacts.html" title="Контакты">Контакты</a></li>
+                    <li><a href="contacts.html" title="Контакты">Контакты</a></li>
                   </ul>
                 </nav>
                 <nav class="navbar__content--right"><a class="btn btn__accent" href="basket.html"><i class="fa fa-shopping-cart"></i><span class="count">5</span><span class="text">товаров</span></a></nav>
@@ -72,52 +72,14 @@
     </header>
     <!-- End Header -->
     <!-- Main Content -->
-    <div class="static">
+    <div class="message__content">
       <div class="container">
-        <h1>Контактная информация</h1>
-        <div class="static__map" id="map"></div>
-        <div class="static__contacts">
-          <div class="row">
-            <div class="col sm-6 static__contacts--header">
-              <h2> <span>“ESPERANZA TYRES” SRL</span><small>Adresa: MD-2005, mun. Chișinău,</small><small>str. Feredeului 12 of. 19</small></h2>
-            </div>
-            <div class="col sm-6 static__contacts--body">
-              <dl>
-                <dt>Tel:</dt>
-                <dd>+(373) 22 27-12-33</dd>
-                <dt>Tel/Fax:</dt>
-                <dd>+(373) 22 27-05-34</dd>
-                <dt>Mobil:</dt>
-                <dd>+(373) 068 774 418</dd>
-                <dt>Mobil:</dt>
-                <dd>+(373) 078 858 518</dd>
-                <dt>E-mail:</dt>
-                <dd><a href="mailto:tyres@esperanza.md">tyres@esperanza.md</a></dd>
-              </dl>
-            </div>
-          </div>
+        <div class="message__content--header fail">
+          <div class="icon"><i class="fa fa-times"></i></div>
+          <h1>Заказ не удался</h1>
+          <p>Что-то пошло не так. Попробуйте еще раз позже.</p>
         </div>
-        <h1>Напишите нам</h1>
-        <form class="static__contactform validate__form">
-          <div class="row">
-            <div class="col sm-6">
-              <label>Имя</label>
-              <input type="text" required name="contact-name">
-            </div>
-            <div class="col sm-6">
-              <label>E-Mail</label>
-              <input type="email" required name="contact-mail">
-            </div>
-            <div class="col sm-6">
-              <label>Сообщение</label>
-              <textarea cols="30" rows="10" required name="contact-message"></textarea>
-            </div>
-            <div class="col sm-6 static__contactform--controls">
-              <div class="g-recaptcha" data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs"></div>
-              <button class="btn btn__accent">Отправить</button>
-            </div>
-          </div>
-        </form>
+        <div class="message__content--footer"><a class="btn btn__accent" href="catalog-grid.html">Продолжить покупки</a></div>
       </div>
     </div>
     <!-- End Main Content -->
@@ -442,8 +404,6 @@
     <!-- Base Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIjN23OujC_NdFfvX4_AuoGBbkx7aHMf0&amp;language=ru&amp;region=RU&amp;callback=initMaps" async defer></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
