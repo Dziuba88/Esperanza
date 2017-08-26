@@ -9,36 +9,10 @@ block main
     .container
       nav.cabinet__content--tabs
         ul
-          li.active: a(aria-controls="cabinet__tab--1" data-toggle="tab") Личные данные
-          li: a(aria-controls="cabinet__tab--2" data-toggle="tab") История заказов
+          li.active: a(aria-controls="cabinet__tab--1" data-toggle="tab") История заказов
+          li: a(aria-controls="cabinet__tab--2" data-toggle="tab") Дебиторская задолжность
       .tab-content
         #cabinet__tab--1.tab-pane.fade.in.active
-          form(action="").cabinet__form.validate__form
-            .row
-              .col.sm-6.md-5
-                .cabinet__form--user
-                  .form--row
-                    label(for="client-email") E-mail
-                    input(type="email" required name="client-email" value="olka@meta.md")#client-email
-                  .form--row
-                    label(for="client-name") Имя
-                    input(type="text" required name="client-name" value="Todiras Radu")#client-name
-                  .form--row
-                    label(for="client-phone") Телефон
-                    input(type="tel" required name="client-phone" value="068-448-405")#client-phone
-              .col.sm-6.md-6.offset-md-1
-                .cabinet__form--password
-                  .form--row
-                    label(for="password-old") Старый пароль
-                    input(type="password" required name="password-old" placeholder="••••")#password-old
-                  .form--row
-                    label(for="password-new") Новый пароль
-                    input(type="password" required name="password-new" placeholder="••••")#password-new
-                  .form--row
-                    label(for="password-confirm") Повторите пароль
-                    input(type="password" required name="password-confirm" placeholder="••••")#password-confirm
-              .col.sm-12.cabinet__form--control: button.btn.btn__accent Сохранить
-        #cabinet__tab--2.tab-pane.fade
           .panel-group
             .panel-group_header
               .date Дата
@@ -91,3 +65,35 @@ block main
                             p
                               span К оплате:
                               span 101000 леев
+        #cabinet__tab--2.tab-pane.fade
+          .seller
+            .row
+              .col.sm-4.seller__header Контрагент
+              .col.sm-8.seller__body Farm Meat Processing SRL
+            .row
+              .col.sm-4.seller__header Срок кредита
+              .col.sm-8.seller__body 60
+            .row
+              .col.sm-4.seller__header ДЗ на 01.07.17
+              .col.sm-8.seller__body 4 451 817,27
+            .row
+              .col.sm-4.seller__header Покупка
+              .col.sm-8.seller__body 1 070 334,01
+            .row
+              .col.sm-4.seller__header Оплата
+              .col.sm-8.seller__body 710 000,00
+            .row
+              .col.sm-4.seller__header ДЗ на 31.07.17
+              .col.sm-8.seller__body 4 812 151,28
+            .row
+              .col.sm-4.seller__header Просроченный долг
+              .col.sm-8.seller__body 2 381 072,45
+            .row
+              .col.sm-4.seller__header Доля просроченного долга
+              .col.sm-8.seller__body 49 %
+            .row
+              .col.sm-4.seller__header Дата образования долга
+              .col.sm-8.seller__body 03.04.2017
+            .row
+              .col.sm-4.seller__header Кол-во просроченный дней
+              .col.sm-8.seller__body 59

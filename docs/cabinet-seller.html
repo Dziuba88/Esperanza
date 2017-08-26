@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Esperanza Tyres | Спасибо за ваш заказ</title>
+    <title>Esperanza Tyres | Личный кабинет</title>
     <link href="favicon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,400i,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body class="message__page">
+  <body class="cabinet">
     <!-- Header -->
     <header class="header">
       <div class="header__top">
@@ -22,9 +22,8 @@
                 <label for="header-search"><i class="fa fa-search"></i></label>
               </form>
             </div>
-            <div class="header__top--user">
-              <button class="btn btn__normal popup-form" href="#login">Войти</button>
-              <button class="btn btn__normal popup-form" href="#registration">Регистрация</button>
+            <div class="header__top--user"><a class="user__settings" href="cabinet-user.html"><i class="fa fa-user-o"></i><span>Валерий</span></a>
+              <button class="btn btn__normal">Выйти</button>
             </div>
             <nav class="header__top--lang">
               <ul>
@@ -72,22 +71,270 @@
     </header>
     <!-- End Header -->
     <!-- Main Content -->
-    <div class="message__content">
+    <div class="cabinet__content">
       <div class="container">
-        <div class="message__content--header">
-          <div class="icon"><i class="fa fa-check"></i></div>
-          <h1>Спасибо за ваш заказ</h1>
-          <p>Ваш заказ успешно оформлен</p>
-        </div>
-        <div class="message__content--footer">
-          <div class="row">
-            <div class="col sm-6 offset-sm-3">
-              <p><a class="btn btn__accent btn-block" href="message1.html">009 thank you</a></p>
-              <p><a class="btn btn__accent btn-block" href="message2.html">009 thank you cash</a></p>
-              <p><a class="btn btn__accent btn-block" href="message3.html">011 order fail</a></p>
-              <p>Other pages:</p>
-              <p><a class="btn btn__accent btn-block" href="404.html">014 404</a></p>
-              <p><a class="btn btn__accent btn-block" href="cabinet-seller.html">004 lichnyi kabinet optovika</a></p>
+        <nav class="cabinet__content--tabs">
+          <ul>
+            <li class="active"><a aria-controls="cabinet__tab--1" data-toggle="tab">История заказов</a></li>
+            <li><a aria-controls="cabinet__tab--2" data-toggle="tab">Дебиторская задолжность</a></li>
+          </ul>
+        </nav>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="cabinet__tab--1">
+            <div class="panel-group">
+              <div class="panel-group_header">
+                <div class="date">Дата</div>
+                <div class="count">Количество</div>
+                <div class="summ">Итого (леев)</div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                </div>
+                <div class="panel-content">
+                  <div class="panel-body">
+                    <table class="order__table">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                </div>
+                <div class="panel-content">
+                  <div class="panel-body">
+                    <table class="order__table">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                </div>
+                <div class="panel-content">
+                  <div class="panel-body">
+                    <table class="order__table">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                </div>
+                <div class="panel-content">
+                  <div class="panel-body">
+                    <table class="order__table">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="cabinet__tab--2">
+            <div class="seller">
+              <div class="row">
+                <div class="col sm-4 seller__header">Контрагент</div>
+                <div class="col sm-8 seller__body">Farm Meat Processing SRL</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">Срок кредита</div>
+                <div class="col sm-8 seller__body">60</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">ДЗ на 01.07.17</div>
+                <div class="col sm-8 seller__body">4 451 817,27</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">Покупка</div>
+                <div class="col sm-8 seller__body">1 070 334,01</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">Оплата</div>
+                <div class="col sm-8 seller__body">710 000,00</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">ДЗ на 31.07.17</div>
+                <div class="col sm-8 seller__body">4 812 151,28</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">Просроченный долг</div>
+                <div class="col sm-8 seller__body">2 381 072,45</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">Доля просроченного долга</div>
+                <div class="col sm-8 seller__body">49 %</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">Дата образования долга</div>
+                <div class="col sm-8 seller__body">03.04.2017</div>
+              </div>
+              <div class="row">
+                <div class="col sm-4 seller__header">Кол-во просроченный дней</div>
+                <div class="col sm-8 seller__body">59</div>
+              </div>
             </div>
           </div>
         </div>

@@ -122,31 +122,28 @@
             </form>
           </div>
           <div class="tab-pane fade" id="cabinet__tab--2">
-            <div class="panel-group" role="tablist" aria-multiselectable="true" id="orders">
-              <div class="row panel-group_header">
-                <div class="col md-7">Дата</div>
-                <div class="col md-2">Количество</div>
-                <div class="col md-3">Итого (леев)</div>
+            <div class="panel-group">
+              <div class="panel-group_header">
+                <div class="date">Дата</div>
+                <div class="count">Количество</div>
+                <div class="summ">Итого (леев)</div>
               </div>
               <div class="panel">
-                <div class="panel-heading" role="tab">
-                  <div class="row">
-                    <div class="col md-7">14.05.2017</div>
-                    <div class="col md-2">8</div>
-                    <div class="col md-2">101000 леев</div>
-                    <div class="col md-1"><a role="button" data-toggle="collapse" data-parent="#orders" href="#order1">!!!</a></div>
-                  </div>
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
                 </div>
-                <div class="panel-collapse fade collapse" id="order1">
+                <div class="panel-content">
                   <div class="panel-body">
-                    <table class="order--table">
+                    <table class="order__table">
                       <thead>
                         <tr>
-                          <th class="col md-1"> </th>
-                          <th class="col md-3">Название товара</th>
-                          <th class="col md-3">Цена (леев)</th>
-                          <th class="col md-2">Количество (штук)</th>
-                          <th class="col md-3">Итого (леев)</th>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -172,9 +169,9 @@
                           <th> </th>
                           <th> </th>
                           <th>
-                            Итого: 1000000 леев<br>
-                            Доставка: 1000 леев<br>
-                            К оплате: 101000 леев
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
                           </th>
                         </tr>
                       </tfoot>
@@ -183,24 +180,21 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="panel-heading" role="tab">
-                  <div class="row">
-                    <div class="col md-7">14.05.2017</div>
-                    <div class="col md-2">8</div>
-                    <div class="col md-2">101000 леев</div>
-                    <div class="col md-1"><a role="button" data-toggle="collapse" data-parent="#orders" href="#order2">!!!</a></div>
-                  </div>
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
                 </div>
-                <div class="panel-collapse fade collapse" id="order2">
+                <div class="panel-content">
                   <div class="panel-body">
-                    <table class="order--table">
+                    <table class="order__table">
                       <thead>
                         <tr>
-                          <th class="col md-1"> </th>
-                          <th class="col md-3">Название товара</th>
-                          <th class="col md-3">Цена (леев)</th>
-                          <th class="col md-2">Количество (штук)</th>
-                          <th class="col md-3">Итого (леев)</th>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -226,9 +220,111 @@
                           <th> </th>
                           <th> </th>
                           <th>
-                            Итого: 1000000 леев<br>
-                            Доставка: 1000 леев<br>
-                            К оплате: 101000 леев
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                </div>
+                <div class="panel-content">
+                  <div class="panel-body">
+                    <table class="order__table">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading" role="button" data-toggle="dropdown">
+                  <div class="date">14.05.2017</div>
+                  <div class="count">8</div>
+                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                </div>
+                <div class="panel-content">
+                  <div class="panel-body">
+                    <table class="order__table">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Название товара</th>
+                          <th>Цена (леев)</th>
+                          <th>Количество (штук)</th>
+                          <th>Итого (леев)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>4</td>
+                          <td>3000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                          <td>315/70 R-22,5 Bontyre D-730</td>
+                          <td>750</td>
+                          <td>8</td>
+                          <td>3000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                          <th>
+                            <p><span>Итого:</span><span>1000000 леев</span></p>
+                            <p><span>Доставка:</span><span>1000 леев</span></p>
+                            <p><span>К оплате:</span><span>101000 леев</span></p>
                           </th>
                         </tr>
                       </tfoot>

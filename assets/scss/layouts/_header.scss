@@ -231,3 +231,7 @@
     }
   }
 }
+
+ @media #{$tablet-down} {
+.header {display: none;}
+ }
