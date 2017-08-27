@@ -207,6 +207,9 @@ $(document).ready(function() {
     });
   };
 
+  $(".navbar__toggle").click(function() {
+    $('.navbar__content--left').slideToggle(350);    
+  });
 
 
 

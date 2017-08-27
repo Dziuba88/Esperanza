@@ -32,9 +32,12 @@ header.header
               svg.togglable: use(xlink:href="#logo")
               svg.icon: use(xlink:href="#logo-xs")
               span.slogan.togglable ваш надежный партнер
-            button.navbar__toggle: i.fa.fa-bars
           .navbar__content
             nav.navbar__content--left
+              .header__search
+                form.search-form
+                  input(type="search" placeholder="поиск")#header-search
+                  label(for="header-search"): i.fa.fa-search
               ul
                 +item('Главная', 'index.html')
                 +item('Каталог', 'catalog-grid.html')
@@ -45,4 +48,5 @@ header.header
                 i.fa.fa-shopping-cart
                 span.count 5
                 span.text товаров
+            button.navbar__toggle: svg: use(xlink:href="#menus")
 // End Header 

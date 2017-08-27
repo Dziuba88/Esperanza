@@ -50,11 +50,15 @@
                   </svg>
                   <svg class="icon">
                     <use xlink:href="#logo-xs"></use>
-                  </svg><span class="slogan togglable">ваш надежный партнер</span></a>
-                <button class="navbar__toggle"><i class="fa fa-bars"></i></button>
-              </div>
+                  </svg><span class="slogan togglable">ваш надежный партнер</span></a></div>
               <div class="navbar__content">
                 <nav class="navbar__content--left">
+                  <div class="header__search">
+                    <form class="search-form">
+                      <input type="search" placeholder="поиск" id="header-search">
+                      <label for="header-search"><i class="fa fa-search"></i></label>
+                    </form>
+                  </div>
                   <ul>
                     <li><a href="index.html" title="Главная">Главная</a></li>
                     <li><a href="catalog-grid.html" title="Каталог">Каталог</a></li>
@@ -63,6 +67,11 @@
                   </ul>
                 </nav>
                 <nav class="navbar__content--right"><a class="btn btn__accent" href="basket.html"><i class="fa fa-shopping-cart"></i><span class="count">5</span><span class="text">товаров</span></a></nav>
+                <button class="navbar__toggle">
+                  <svg>
+                    <use xlink:href="#menus"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
