@@ -1,6 +1,7 @@
 .catalog {
   &__filters {
     padding: 40px 0;
+    
     &--header {
       ul {
         margin: 0 -15px;
@@ -32,6 +33,9 @@
             border: 1px solid transparent;
             border-bottom: none;
             position: relative;
+
+            @media #{$tablet-down} {font-size: 14px;}
+
 
             &:after {
               content: '';
@@ -156,7 +160,6 @@
           width: 100%;
           text-transform: uppercase;
           letter-spacing: .05em;
-          font-size: 16px;
           font-weight: 700;
         }
       }
@@ -170,9 +173,6 @@
 
       h1 {
         text-align: center;
-        font-size: 40px;
-        line-height: 1;
-        font-weight: 400;
         margin: 0 0 20px;
       }
 
@@ -318,7 +318,6 @@
           width: 100%;
           text-transform: uppercase;
           letter-spacing: .05em;
-          font-size: 16px;
           font-weight: 700;
           margin-bottom: 0 !important;
         }
@@ -334,7 +333,6 @@
             height: 30px;
             text-align: center;
             color: #212121;
-            font-size: 16px;
             border-radius: 0;
             border: 1px solid $c_5;
           }
@@ -366,6 +364,12 @@
         font-size: 18px;
         text-align: center;
         padding: 0 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex: none;
+        width: 100%;
+        display: block;
 
         a {
           text-decoration: none;
@@ -495,7 +499,6 @@
           border-radius: 0;
           text-transform: uppercase;
           letter-spacing: .05em;
-          font-size: 16px;
           font-weight: 700;
         }
 
@@ -510,7 +513,6 @@
             height: 30px;
             text-align: center;
             color: #212121;
-            font-size: 16px;
             border-radius: 0;
             border: 1px solid $c_5;
           }
@@ -757,9 +759,7 @@
 
     &--title {
       margin: 0 0 15px;
-      font-size: 40px;
-      line-height: 1;
-      font-weight: 400;
+      @media #{$tablet-down} {text-align: center;}
     }
 
     &--price {
@@ -859,7 +859,6 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: .05em;
-        font-size: 16px;
         font-weight: 700;
         width: 100%;
       }
@@ -878,7 +877,6 @@
           height: 30px;
           text-align: left;
           color: #212121;
-          font-size: 16px;
           border-radius: 0;
           border: none;
           padding: 0 10px;

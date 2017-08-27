@@ -258,3 +258,8 @@
     line-height: 20px;
   }
 }
+
+
+@media #{$tablet-down} {
+  .order__table thead th, .order__table tfoot th {white-space: nowrap;font-size: 10px;}
+}

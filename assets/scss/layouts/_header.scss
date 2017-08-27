@@ -232,6 +232,16 @@
   }
 }
 
- @media #{$tablet-down} {
-.header {display: none;}
- }
+@media #{$tablet-down} {
+  .header__top--contacts .phone {margin-right: 15px;font-size: 12px;}
+  .header__top--lang ul {margin-left: 10px;}
+  .header__top .btn {font-size: 12px;}
+  .navbar__content ul li a {font-size: 14px;}
+  .navbar .navbar__header .brand {width: 144px;}
+  .navbar {padding: 10px 0;}
+  .navbar__header .brand svg.togglable {width: 144px;height: 36px;}
+  .navbar__header .brand .slogan {font-size: 9px;bottom: 1px;left: 48px;}
+  .navbar.fixed {padding: 10px 0;}
+  .header__bottom {height: 57px;}
+  .header__top--search .search-form input {font-size: 12px;}
+}

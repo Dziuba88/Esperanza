@@ -3,10 +3,7 @@
     padding: 40px 0;
 
     h1 {
-      font-weight: 400;
       text-align: center;
-      font-size: 40px;
-      line-height: 1;
       margin: 0 0 30px;
     }
     &--table {
@@ -64,7 +61,7 @@
 
           &:nth-child(4) {
             text-align: right;
-            padding-right: 20px;
+            padding-right: 10px;
           }
         }
       }
@@ -136,7 +133,7 @@
 
   &__delivery {
     background-color: #fff;
-    padding: 40px 0 20px;
+    padding: 40px 15px 20px;
 
     h2 {
       margin: 0 0 30px;
@@ -331,4 +328,13 @@
     }
   }
 
+}
+
+
+
+@media #{$tablet-down} {
+  .basket__summary table {font-size: 14px;}
+  .basket__summary table tr.total {font-size: 20px;}
+  .basket__summary table td, .basket__summary table th {padding: 5px;}
+  .basket__list--table thead th {white-space: nowrap;font-size: 10px;}
 }

@@ -7,6 +7,26 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media #{$tablet-down} {
+    font-size: 14px;
+  }
+  @media #{$mobile-screen} {
+    font-size: 12px;
+  }
+
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  @media #{$tablet-down} {
+    font-size: 32px;
+  }
+  @media #{$mobile-screen} {
+    font-size: 24px;
+  }
 }
 
 .flexbox {
@@ -151,7 +171,6 @@ nav {
       border: 1px solid $c_5;
       border-left: none;
       padding: 11px 0 9px;
-      font-size: 16px;
       line-height: 20px;
       text-align: center;
       width: 40px;

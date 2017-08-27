@@ -151,6 +151,10 @@
   &--item {
     padding: 0 15px 20px;
     position: relative;
+    @media #{$tablet-down} {
+      padding: 0 0 20px;
+      font-size: 12px;
+    }
 
     &:after {
       position: absolute;
@@ -171,9 +175,18 @@
       font-size: 30px;
       line-height: 1.2;
       margin: 0 0 15px;
+
+      @media #{$tablet-down} {
+        font-size: 24px;
+      }
+
+      
       .fa {
         font-size: 40px;
         color: $c_1;
+        @media #{$tablet-down} {
+          font-size: 32px;
+        }
       }
 
       span {
