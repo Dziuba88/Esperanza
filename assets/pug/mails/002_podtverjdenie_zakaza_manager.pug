@@ -1,0 +1,37 @@
+extends mail
+block main
+  h1(style="font-weight: normal;text-align: center;margin: 20px 0 80px;font-size: 24px;color:#615c90;") Поступил новый заказ
+  table(border="0" cellpadding="5" cellspacing="0" style="text-align: left;margin: 0 0 40px;font-size: 16px;")
+    tr
+      td Дата:
+      td 12.07.2017  
+        span(style="margin-left: 15px;") 18:23
+    tr
+      td Номер заказа:
+      td 233245
+
+  table(border="0" cellpadding="5" cellspacing="0" width="100%" style="text-align: left;line-height:28px;margin: 0 0 40px;")
+    tr(style="background-color: #615c90;color: #fff;")
+      th Название товара
+      th Цена
+      th Количество
+      th Общая стоимость
+    tr(style="font-size: 14px;")
+      td Stalker A/T 205/75 R15
+      td 750 леев
+      td 4 шт.
+      td 3000 леев
+    tr(style="font-size: 14px;")
+      td Stalker A/T 205/75 R15
+      td 750 леев
+      td 4 шт.
+      td 3000 леев
+
+
+  table(border="0" cellpadding="5" cellspacing="0" style="text-align: left;")
+    tr(style="font-size: 16px;")
+      td Доставка:
+      td 100 леев (Курьер)
+    tr(style="font-size: 24px;line-height:30px;")
+      td Итого: 
+      td 1000100 леев

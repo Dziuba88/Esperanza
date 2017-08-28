@@ -1,0 +1,40 @@
+extends mail
+block main
+  h1(style="font-weight: normal;text-align: center;margin: 20px 0 40px;font-size: 24px;color:#615c90;") Новое поступление товаров
+    small(style="display:block;padding-top:10px;font-weight: normal;text-align: center;font-size: 14px;") Благодарим вас за оформление подписки
+  
+  h3(style="text-align: left;margin: 0 0 10px;font-size: 18px;font-weight: normal;") Вы выбрали следующие параметры поиска:
+  table(border="0" cellpadding="5" width="100%" cellspacing="0" style="text-align: left;margin: 0 0 40px;font-size: 12px;")
+    tr
+      th(style="padding:5px 15px;background-color: #615c90;color: #fff;") Ширина:
+      td(style="padding:5px 15px;background-color: #f5f5f5;" width="100%") 120
+    tr
+      th(style="padding:5px 15px;background-color: #615c90;color: #fff;") Высота:
+      td(style="padding:5px 15px;background-color: #ffffff;" width="100%") 175
+    tr
+      th(style="padding:5px 15px;background-color: #615c90;color: #fff;") Ось:
+      td(style="padding:5px 15px;background-color: #f5f5f5;" width="100%") левая
+
+  p(style="text-align: left;margin: 0 0 10px;font-size: 14px;line-height:20px;") Информация о новых товарах будет приходить к вам в течении указанного вами периода.
+  p(style="text-align: left;margin: 0 0 30px;font-size: 14px;line-height:20px;") Если необходимо изменить параметры поиска, вы всегда можете это сделать на нашем сайте 
+    a(href="http://www.esperanza.md") www.esperanza.md
+  h3(style="text-align: left;margin: 0 0 10px;font-size: 18px;font-weight: normal;") Уже, сейчас, вы можете просмотреть предложения, которые соответствуют параметрам поиска:
+
+  table(border="0" cellpadding="5" cellspacing="0" width="100%" style="text-align: left;line-height:28px;margin: 0 0 10px;")
+    tr
+      th(style="border-bottom: 1px solid #d6d5e7; padding:5px 0;"): img(src="https://dziuba88.github.io/Esperanza/img/item_image(760x760).png", alt="", width="40", height="40") 
+      td(style="border-bottom: 1px solid #d6d5e7; font-size: 18px;" width="100%"): a(href="#") 185/75 R-16C Bontyre BT-228
+    tr
+      th(style="border-bottom: 1px solid #d6d5e7; padding:5px 0;"): img(src="https://dziuba88.github.io/Esperanza/img/item_image(760x760).png", alt="", width="40", height="40") 
+      td(style="border-bottom: 1px solid #d6d5e7; font-size: 18px;" width="100%"): a(href="#") 185/75 R-16C Bontyre BT-228
+    tr
+      th(style="border-bottom: 1px solid #d6d5e7; padding:5px 0;"): img(src="https://dziuba88.github.io/Esperanza/img/item_image(760x760).png", alt="", width="40", height="40") 
+      td(style="border-bottom: 1px solid #d6d5e7; font-size: 18px;" width="100%"): a(href="#") 185/75 R-16C Bontyre BT-228
+    tr
+      th(style="border-bottom: 1px solid #d6d5e7; padding:5px 0;"): img(src="https://dziuba88.github.io/Esperanza/img/item_image(760x760).png", alt="", width="40", height="40") 
+      td(style="border-bottom: 1px solid #d6d5e7; font-size: 18px;" width="100%"): a(href="#") 185/75 R-16C Bontyre BT-228
+  p(style="text-align: left;margin: 0 0 10px;font-size: 14px;line-height:20px;") С уважением, Esperanza
+  p(style="text-align: left;margin: 0;font-size: 14px;line-height:20px;color:#706e80;") 
+    | Если вы не хотите получать эту рассылку, нажмите 
+    a(href="http://www.esperanza.md") здесь
+    | , чтоб отписаться.
