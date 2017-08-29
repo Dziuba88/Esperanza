@@ -121,3 +121,9 @@
     }
   }
 }
+
+@media #{$mobile-screen} {
+  .static__content {padding: 30px 20px 20px;}
+  .static__contacts--header {padding-top: 20px;padding-bottom: 20px;}
+  .static__map {height: 240px;}
+}

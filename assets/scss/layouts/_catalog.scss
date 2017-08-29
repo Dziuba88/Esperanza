@@ -977,3 +977,36 @@
 
   }
 }
+
+
+
+@media #{$mobile-screen} {
+  .catalog__filters--header ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .catalog__filters--header ul li a {
+    border-radius: 0;
+    border: none !important;
+    &:hover {background-color: rgba($c_5, .5);}
+  }
+
+  .catalog__filters--header ul li {
+    width: 100%;
+    float: none !important;
+    margin-bottom: 1px;
+
+    &.active a {
+      background-color: $c_1;
+      span, svg {color: #fff;fill: #fff;}
+    }
+  }
+
+  .catalog__filters--form__row .col {width: 100%;}
+  .catalog__filters--form__controls {padding-top: 0;}
+  .catalog__filters--form__controls .btn {margin-bottom: 10px;}
+
+
+
+}

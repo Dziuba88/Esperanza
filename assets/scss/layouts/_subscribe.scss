@@ -84,3 +84,25 @@
 
 
 }
+
+@media #{$mobile-screen} {
+  .subscribe__wraper {padding: 0;display: block;}
+  .subscribe__header {
+    background: $c_1;
+    h3 span {font-size: 24px;}
+    h3 small {font-size: 16px;}
+  }
+  .subscribe__body {display: block;}
+  .subscribe__body--item {width: 100%;}
+  .subscribe__control {padding: 10px 10px 20px;}
+  .subscribe__control .btn__accent {margin: 0 auto;}
+
+
+
+
+
+
+
+
+
+}

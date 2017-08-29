@@ -146,6 +146,8 @@
     line-height: 1;
     color: $c_6;
     font-weight: 400;
+
+    @media #{$mobile-screen} {font-size: 32px;}
   }
 
   &--item {
@@ -154,6 +156,10 @@
     @media #{$tablet-down} {
       padding: 0 0 20px;
       font-size: 12px;
+    }
+
+    @media #{$mobile-screen} {
+      padding: 0 0 30px;
     }
 
     &:after {
@@ -165,6 +171,15 @@
       margin-left: 7.5px;
       color: $c_1;
       font-size: 18px;
+
+      @media #{$mobile-screen} {
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: rotate(90deg) translateX(-50%);
+        margin: 0;
+        font-size: 18px;
+      }
       
     }
 

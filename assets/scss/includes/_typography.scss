@@ -13,6 +13,7 @@ body {
   }
   @media #{$mobile-screen} {
     font-size: 12px;
+    min-width: 320px;
   }
 
 }

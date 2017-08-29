@@ -22,24 +22,24 @@ block main
             tr
               td: a(href="catalog-item.html"): img(src="img/item_image(760x760).png", alt="").tooltip(title="подробнее" data-arrow="true")
               td 315/70 R-22,5 Bontyre D-730
-              td 750
-              td
+              td(data-cell_mobile="Цена (леев)") 750
+              td(data-cell_mobile="Количество (штук)")
                 .number
                   input(type='text', value='4', min='1')
                   span.btn.popup-form(href="#alert"): i.fa.fa-angle-up
                   span.btn.btn-minus: i.fa.fa-angle-down 
-              td 3000
+              td(data-cell_mobile="Общая стоимость (леев)") 3000
               td: span.delete.tooltip(title="удалить" data-arrow="true")
             tr
               td: a(href="catalog-item.html"): img(src="img/item_image(760x760).png", alt="").tooltip(title="подробнее" data-arrow="true")
               td 315/70 R-22,5 Bontyre D-730
-              td 750
-              td
+              td(data-cell_mobile="Цена (леев)") 750
+              td(data-cell_mobile="Количество (штук)")
                 .number
                   input(type='text', value='8', min='1')
                   span.btn.btn-plus: i.fa.fa-angle-up
                   span.btn.btn-minus: i.fa.fa-angle-down 
-              td 3000
+              td(data-cell_mobile="Общая стоимость (леев)") 3000
               td: span.delete.tooltip(title="удалить" data-arrow="true")
           tfoot
             tr

@@ -139,16 +139,15 @@ $(document).ready(function() {
   if($(".catalog__similar--slider").length) {
     $('.catalog__similar--slider').owlCarousel({
       loop:true,
-      stagePadding:40,
       nav: true,
       navText: ['',''],
       mouseDrag: false,
       dots: false,
       responsiveClass:true,
       responsive:{
-          0:{items:1},
-          700:{margin:10,items:2},
-          1000:{margin:10,items:4}
+          0:{stagePadding:0,items:1},
+          700:{stagePadding:40,margin:10,items:2},
+          1000:{stagePadding:40,margin:10,items:4}
       }
     });
   };
