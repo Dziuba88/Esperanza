@@ -79,6 +79,8 @@
     font-weight: 700;
     height: 40px;
     margin-bottom: 30px;
+
+    &.nomrg {margin-bottom: 0;}
   }
 
   .mfp-close {
@@ -126,6 +128,14 @@
   }
 
   &__form {
+    hr {
+      display: block;
+      border: none;
+      height: 1px;
+      margin: 30px 0;
+
+      background-color: $c_5;
+    }
     &--row {
       margin-bottom: 20px;
 
@@ -151,6 +161,15 @@
       margin-bottom: 5px;
       transition: $transition;
 
+      &.query {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+
+
+
+
       &.error {
         color: $c_3;
       }
@@ -172,6 +191,71 @@
         border: 1px solid $c_3;
       }
     }
+    textarea {
+      height: 120px;
+      resize: none;
+      width: 100%;
+      border-radius: 5px;
+      background-color: #fff;
+      border: 1px solid $c_5;
+      padding: 10px;
+      transition: $transition;
+
+      &:focus {
+        border: 1px solid $c_1;
+      }
+
+      &.error {
+        border: 1px solid $c_3;
+      }
+    }
 
   }
+
+}
+
+
+.radiobox {
+  margin-bottom: 15px;
+  display: block;
+
+  input {display: none;
+
+    + label {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-family: $condensed;
+
+      &:before {
+        font-family: 'FontAwesome';
+        content: '\f00c';
+        display: block;
+        flex:none;
+        width: 34px;
+        height: 34px;
+        border: 1px solid $c_5;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 6px 7px 8px;
+        line-height: 20px;
+        font-size: 18px;
+        color: #fff;
+        transition: $transition;
+      }
+
+      &:hover:before {color: $c_5;}
+    }
+
+    &:checked + label:before {color: $c_1;}
+  
+  
+  
+  }
+
+}
+
+@media #{$mobile-screen} {
+.dialog {padding: 40px 30px;}
 }

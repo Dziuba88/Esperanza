@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,400i,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body class="message__page">
+  <body class="message__page" id="top">
     <!-- Header -->
     <header class="header">
       <div class="header__top">
@@ -51,11 +51,20 @@
                   </svg>
                   <svg class="icon">
                     <use xlink:href="#logo-xs"></use>
-                  </svg><span class="slogan togglable">ваш надежный партнер</span></a>
-                <button class="navbar__toggle"><i class="fa fa-bars"></i></button>
-              </div>
+                  </svg><span class="slogan togglable">ваш надежный партнер</span></a></div>
               <div class="navbar__content">
                 <nav class="navbar__content--left">
+                  <button class="navbar__close">
+                    <svg>
+                      <use xlink:href="#menu-close"></use>
+                    </svg>
+                  </button>
+                  <div class="header__search">
+                    <form class="search-form">
+                      <input type="search" placeholder="поиск" id="header-search">
+                      <label for="header-search"><i class="fa fa-search"></i></label>
+                    </form>
+                  </div>
                   <ul>
                     <li><a href="index.html" title="Главная">Главная</a></li>
                     <li><a href="catalog-grid.html" title="Каталог">Каталог</a></li>
@@ -64,6 +73,11 @@
                   </ul>
                 </nav>
                 <nav class="navbar__content--right"><a class="btn btn__accent" href="basket.html"><i class="fa fa-shopping-cart"></i><span class="count">5</span><span class="text">товаров</span></a></nav>
+                <button class="navbar__toggle">
+                  <svg>
+                    <use xlink:href="#menu"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -139,9 +153,53 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer><a class="gotop" href="#top"><i class="fa fa-angle-up"></i></a><a class="feed popup-form" href="#feedback"><span>Как мы можем улучшить сайт для вас?</span></a>
     <!-- End Footer -->
     <!-- Modals-->
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="feedback">
+      <h3 class="dialog__header">Опрос</h3>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <label class="query">Вопрос 1</label>
+          <div class="radiobox">
+            <input type="radio" name="group1" id="radiobox1_1">
+            <label for="radiobox1_1">Ответ 1</label>
+          </div>
+          <div class="radiobox">
+            <input type="radio" name="group1" id="radiobox1_2">
+            <label for="radiobox1_2">Ответ 2</label>
+          </div>
+          <div class="radiobox">
+            <input type="radio" name="group1" id="radiobox1_3">
+            <label for="radiobox1_3">Ответ 3</label>
+          </div>
+        </div>
+        <hr>
+        <div class="dialog__form--row">
+          <label class="query">Вопрос 2</label>
+          <div class="radiobox">
+            <input type="radio" name="group2" id="radiobox2_1">
+            <label for="radiobox2_1">Ответ 1</label>
+          </div>
+          <div class="radiobox">
+            <input type="radio" name="group2" id="radiobox2_2">
+            <label for="radiobox2_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </label>
+          </div>
+          <div class="radiobox">
+            <input type="radio" name="group2" id="radiobox2_3">
+            <label for="radiobox2_3">Ответ 3</label>
+          </div>
+        </div>
+        <hr>
+        <div class="dialog__form--row">
+          <label>Комментарий</label>
+          <textarea name="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__accent nomrg">Отправить</button>
+        </div>
+      </form>
+    </div>
     <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="login">
       <h3 class="dialog__header">Авторизация</h3>
       <form class="dialog__form validate__form" action="">
@@ -370,58 +428,6 @@
         </div>
       </div>
     </div>
-    <!--#request.zoom-anim-dialog.mfp-hide.dialog.user-forms
-    h1 Заявка исполнителям
-    form(action="").dialog-form.validate-form
-      .input-row
-        input(type="email" required placeholder="E-mail" name="request-email")#request-email
-      .input-row
-        input(type="tel" required placeholder="Телефон" name="request-phone")#request-phone
-      .input-row
-        select
-          option Выбрать категорию
-          option категория 1
-          option категория 2
-          option категория 3
-          option категория 4
-          option категория 5
-          option категория 6
-          option категория 7
-          option категория 8
-          option категория 9
-      .input-row
-        textarea(name="request-message", cols="30", rows="10" required placeholder="Описание работы:" )#request-message
-      .input-row
-        button.btn.btn-accent.btn-block Отправить
-    -->
-    <!--#sunet.zoom-anim-dialog.mfp-hide.dialog.user-forms
-    h1 Comandă un sunet
-    p
-      i.fa.fa-hourglass-2
-      span Răspuns in 15 minute
-    form(action="").dialog-form.validate-form
-      .input-row
-        input(type="text" required placeholder="Numele" name="sunet-name")#sunet-name
-      .input-row
-        input(type="tel" required placeholder="Numărul de telefon" name="sunet-phone")#sunet-phone
-      .input-row
-        button.btn.btn-accent.btn-block Comandă un sunet
-    -->
-    <!--#categories.zoom-anim-dialog.mfp-hide.dialog.user-forms
-    h1 Категории работ
-    form(action="").dialog-form.validate-form
-      .input-row
-        .checkbox
-          input(type="checkbox")#cat-1
-          label(for="cat-1") Гарантия на выполненные работы – 3 года
-    
-    
-    
-    
-    
-      .input-row
-        button.btn.btn-accent.btn-block Comandă un sunet
-    -->
     <!-- End Modals -->
     <!-- Base Scripts -->
     <script src="js/jquery.min.js"></script>

@@ -364,9 +364,9 @@
         font-size: 18px;
         text-align: center;
         padding: 0 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        //white-space: nowrap;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
         flex: none;
         width: 100%;
         display: block;
@@ -1007,6 +1007,48 @@
   .catalog__filters--form__controls {padding-top: 0;}
   .catalog__filters--form__controls .btn {margin-bottom: 10px;}
 
+  .catalog__similar--slider .owl-nav .owl-next {right: 15px;}
+  .catalog__similar--slider .owl-nav .owl-prev {left: 15px;}
 
+
+  // CATALOG ITEM MOBILE
+  .catalog__grid--item {position: relative;padding: 20px 50px 120px;
+    &.not-available {padding-bottom: 20px;}
+  }
+  .catalog__grid--item__image {position: static;margin-bottom: 20px;}
+  .catalog__grid--item__control {opacity: 1;left: 50px;right: 50px;background-color: transparent;bottom: 10px;}
+  .catalog__grid--item__control .btn__accent {height: 34px;font-size: 16px;}
+  .catalog__grid--item__title {white-space: normal;}
+
+  .catalog__list--item {
+    position: relative;
+    padding: 20px 20px 70px 125px;
+    min-height: 220px;
+    &.not-available {padding-bottom: 20px;min-height: 160px;}
+  }
+  .catalog__list--item__info {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100px;
+  }
+  .catalog__list--item__image {margin-top: 20px;}
+  .catalog__list--item__price {height: auto;}
+  .catalog__list--item__price .old-price {margin: 0 5px;font-size: 12px;line-height: 20px;padding: 0;}
+  .catalog__list--item__price .new-price {padding: 5px;}
+  .catalog__list--item__price .new-price span:first-child {font-size: 18px;}
+  .catalog__list--item__price .new-price span:last-child {font-size: 12px;}
+  .catalog__list--item__title {font-size: 12px;margin-bottom: 10px;line-height: 20px;}
+  .catalog__list--item__text p {font-size: 10px;line-height: 12px;}
+  .catalog__list--item__content {padding: 0;}
+  .catalog__list--item__text {margin-bottom: 0;}
+  .catalog__list--item__control {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+  }
+  .catalog__list--item__control .btn__accent {flex:1;}
 
 }

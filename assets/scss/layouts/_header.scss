@@ -233,7 +233,7 @@
 }
 @media #{$tablet-up} {
   .navbar__content--left {display: block !important;
-    .header__search {display: none;}
+    .header__search, .navbar__close {display: none;}
   }
 }
 @media #{$tablet-down} {
@@ -251,6 +251,13 @@
 }
 
 @media #{$mobile-screen} {
+  .noscroll, .noscroll body {
+    overflow: hidden;
+  }
+
+
+
+
   .header__top .btn {margin: 0 10px 0 0;}
   .header__bottom {height: 50px;}
   .header__top .flexbox {margin: 0 -5px;}
@@ -290,7 +297,87 @@
     bottom: 0;
     z-index: 999;
     background-color: $c_1;
+    padding: 50px 15px;
+    overflow-y: auto;
 
-    .header__search {display: block;}
+    .header__search {
+      display: block;
+      margin-bottom: 20px;
+      .search-form {
+        display: block;
+        position: relative;
+
+        label {
+          font-family: $normal;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          left: 10px;
+          top: 50%;
+          margin-top: -10px;
+          transition: $transition;
+          color: $c_2;
+          font-size: 20px;
+
+          .fa {
+            display: block;
+          }
+        }
+
+        input {
+          display: block;
+          background-color: $c_5;
+          border: none; 
+          padding: 0 30px 0 40px;
+          transition: $transition;
+          color: $c_2;
+          height: 40px;
+          border-radius: 5px;
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+    
+    }
+  }
+
+  .navbar__close {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    opacity: .5;
+
+    &:hover {opacity: 1;}
+
+    svg {
+      display: block;
+      width: 16px;
+      height: 16px;
+      fill: #fff;
+    }
+  }
+
+  .navbar__content ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $c_5;
+    &:last-child {border-bottom: none;}
+
+    a {
+      padding: 10px 0;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 20px;
+      color: #fff;
+    }
+
+    a.active, a:hover {color: $c_2;}
   }
 }

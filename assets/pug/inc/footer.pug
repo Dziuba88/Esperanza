@@ -30,11 +30,46 @@ footer.footer
         .footer__developer
           span Разработано в  
           a(href="http://meta.md" target="_blank") www.meta.md
+a(href="#top").gotop: i.fa.fa-angle-up
+a(href="#feedback").feed.popup-form: span Как мы можем улучшить сайт для вас?
+
 
 // End Footer 
 
 
 // Modals
+#feedback.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Опрос
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label.query Вопрос 1
+      .radiobox
+        input(type="radio" name="group1")#radiobox1_1
+        label(for="radiobox1_1") Ответ 1
+      .radiobox
+        input(type="radio" name="group1")#radiobox1_2
+        label(for="radiobox1_2") Ответ 2
+      .radiobox
+        input(type="radio" name="group1")#radiobox1_3
+        label(for="radiobox1_3") Ответ 3
+    hr
+    .dialog__form--row
+      label.query Вопрос 2
+      .radiobox
+        input(type="radio" name="group2")#radiobox2_1
+        label(for="radiobox2_1") Ответ 1
+      .radiobox
+        input(type="radio" name="group2")#radiobox2_2
+        label(for="radiobox2_2") Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      .radiobox
+        input(type="radio" name="group2")#radiobox2_3
+        label(for="radiobox2_3") Ответ 3
+    hr
+    .dialog__form--row
+      label Комментарий
+      textarea(name="", cols="30", rows="10")
+    .dialog__form--row.controls
+      button.btn.btn__accent.nomrg Отправить
 #login.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h3.dialog__header Авторизация
   form(action="").dialog__form.validate__form
@@ -126,53 +161,4 @@ footer.footer
 
 
 
-//#request.zoom-anim-dialog.mfp-hide.dialog.user-forms
-  h1 Заявка исполнителям
-  form(action="").dialog-form.validate-form
-    .input-row
-      input(type="email" required placeholder="E-mail" name="request-email")#request-email
-    .input-row
-      input(type="tel" required placeholder="Телефон" name="request-phone")#request-phone
-    .input-row
-      select
-        option Выбрать категорию
-        option категория 1
-        option категория 2
-        option категория 3
-        option категория 4
-        option категория 5
-        option категория 6
-        option категория 7
-        option категория 8
-        option категория 9
-    .input-row
-      textarea(name="request-message", cols="30", rows="10" required placeholder="Описание работы:" )#request-message
-    .input-row
-      button.btn.btn-accent.btn-block Отправить
-//#sunet.zoom-anim-dialog.mfp-hide.dialog.user-forms
-  h1 Comandă un sunet
-  p
-    i.fa.fa-hourglass-2
-    span Răspuns in 15 minute
-  form(action="").dialog-form.validate-form
-    .input-row
-      input(type="text" required placeholder="Numele" name="sunet-name")#sunet-name
-    .input-row
-      input(type="tel" required placeholder="Numărul de telefon" name="sunet-phone")#sunet-phone
-    .input-row
-      button.btn.btn-accent.btn-block Comandă un sunet
-//#categories.zoom-anim-dialog.mfp-hide.dialog.user-forms
-  h1 Категории работ
-  form(action="").dialog-form.validate-form
-    .input-row
-      .checkbox
-        input(type="checkbox")#cat-1
-        label(for="cat-1") Гарантия на выполненные работы – 3 года
-
-
-
-
-
-    .input-row
-      button.btn.btn-accent.btn-block Comandă un sunet
 // End Modals 

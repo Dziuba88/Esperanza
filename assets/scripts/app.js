@@ -207,13 +207,30 @@ $(document).ready(function() {
   };
 
   $(".navbar__toggle").click(function() {
-    $('.navbar__content--left').slideToggle(350);    
+    $('.navbar__content--left').slideDown(350);
+    $('html').addClass('noscroll');
   });
 
+  $(".navbar__close").click(function() {
+    $('.navbar__content--left').slideUp(350);    
+    $('html').removeClass('noscroll');
+ });
 
+  $("a.gotop").on("click", function(event){
+    if(this.hash !== ""){
+        event.preventDefault();
+        $("html, body").animate({scrollTop:$(this.hash).offset().top}, 500);
+    }
+  });
 
-
-
+  var element = $('a.gotop');
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 200){
+      element.addClass('active');
+    } else {
+      element.removeClass('active');
+    };
+  });
 
 
 
