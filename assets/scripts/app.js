@@ -188,8 +188,14 @@ $(document).ready(function() {
       removalDelay: 300,
       mainClass: 'my-mfp-zoom-in',
       callbacks: {
-        open: function() {$('.navbar.fixed').css('padding-right', '17px');},
-        close: function() {$('.navbar.fixed').css('padding-right', '');}
+        open: function() {
+          $('html').addClass('noscroll');
+          $('.navbar.fixed').css('padding-right', '17px');
+        },
+        close: function() {
+          $('.navbar.fixed').css('padding-right', '');
+          $('html').removeClass('noscroll');
+        }
       }
     });
   };
@@ -231,63 +237,6 @@ $(document).ready(function() {
       element.removeClass('active');
     };
   });
-
-
-
-
-
-
-
-/*
-  var toggleText = function() {
-    $('[data-toggle-secondary]').each(function() {
-        var $toggle = $(this);
-        var originalText = $toggle.text();
-        var secondaryText = $toggle.data('toggle-secondary');
-        var $target = $($toggle.attr('href'));
-
-        $target.on('show.bs.collapse hide.bs.collapse', function() {
-            if ($toggle.text() == originalText) {
-                $toggle.text(secondaryText);
-            } else {
-                $toggle.text(originalText);
-            }
-        });
-    });
-  };
-  toggleText();
-*/
-/*  $(".navbar__toggle").click(function() {
-    $(this).toggleClass('active');
-    $('.navbar-content').toggleClass('open');    
-  });*/
-
-/*  $("a").on("click", function(event){
-    if(this.hash !== ""){
-        event.preventDefault();
-        $("html, body").animate({scrollTop:$(this.hash).offset().top}, 500);
-        //window.location.hash = this.hash;
-    }
-  });*/
-
-  
-  /*$('.popup-gallery').each(function() {
-    $(this).magnificPopup({
-      delegate: 'a',
-      type: 'image',
-      closeOnContentClick: true,
-      closeBtnInside: false,
-      fixedContentPos: true,
-      mainClass: 'mfp-img-mobile mfp-with-zoom',
-      gallery: {
-        enabled: true,
-        navigateByImgClick: true,
-      },
-      image: {
-        verticalFit: true
-      }
-    });
-  });*/
 
 });
 
