@@ -189,12 +189,10 @@ $(document).ready(function() {
       mainClass: 'my-mfp-zoom-in',
       callbacks: {
         open: function() {
-          $('html').addClass('noscroll');
           $('.navbar.fixed').css('padding-right', '17px');
         },
         close: function() {
           $('.navbar.fixed').css('padding-right', '');
-          $('html').removeClass('noscroll');
         }
       }
     });
