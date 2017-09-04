@@ -161,6 +161,7 @@
           text-transform: uppercase;
           letter-spacing: .05em;
           font-weight: 700;
+          font-size: 14px;
         }
       }
     }
@@ -190,6 +191,7 @@
             color: #fff;
             padding: 15px 0;
             user-select: none;
+            text-transform: uppercase;
           }
 
           &:first-child a {
@@ -200,7 +202,11 @@
             border-radius: 0 5px 5px 0
           }
 
-          &.active a, a:hover {
+          a:hover {
+            background-color: $c_2;
+          }
+
+          &.active a {
             background-color: $c_3;
           }
 
@@ -500,6 +506,7 @@
           text-transform: uppercase;
           letter-spacing: .05em;
           font-weight: 700;
+          font-size: 14px;
         }
 
         .number {
@@ -525,6 +532,7 @@
             padding: 0;
             border-radius: 0;
             margin-left: 2px;
+
 
             .fa {display: block;}
 
@@ -631,7 +639,7 @@
         display: inline-block;
         line-height: 1;
         vertical-align: middle;
-        padding: 8px;
+        padding: 8px 12px;
         margin: 0;
         border-radius: 5px;
         border: 1px solid $c_5;
@@ -669,11 +677,11 @@
           + label {
             cursor: pointer;
             display: block;
-            padding: 8px;
+            padding: 8px 12px;
             margin: 0;
             border-radius: 5px;
             border: 1px solid $c_5;
-            color: $c_4;
+            color: $c_1;
 
             .fa {
               margin-right: .5em;
@@ -797,6 +805,11 @@
         font-size: 14px;
         color: $c_1;
         .fa {margin-right: 5px;}
+
+        &.none {
+          padding-top: 20px;
+          margin-bottom: 20px;
+        }
       }
 
       .price {

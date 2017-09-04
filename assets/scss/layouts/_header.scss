@@ -35,7 +35,7 @@
         margin-right: 20px;
         font-size: 18px;
         i {
-          margin-right: 5px;
+          margin-right: 10px;
         }
       }
     }
@@ -207,7 +207,12 @@
         }
       }
     }
-    .btn {height: 36px;}
+    .btn {
+      height: 36px;
+      padding: 0 10px;
+      font-size: 14px;
+      .fa {font-size: 14px;margin-left: 5px;margin-bottom: 3px;}
+    }
   }
 }
 

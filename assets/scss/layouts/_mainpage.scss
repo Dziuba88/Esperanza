@@ -151,7 +151,7 @@
   }
 
   &--item {
-    padding: 0 15px 20px;
+    padding: 0 5px 20px;
     position: relative;
     @media #{$tablet-down} {
       padding: 0 0 20px;
@@ -213,6 +213,7 @@
       font-family: $normal;
       color: $c_4;
       margin: 0 0 30px;
+
     }
   }
 
