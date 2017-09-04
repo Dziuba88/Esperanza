@@ -18,7 +18,7 @@
             <div class="header__top--contacts"><span class="phone"><i class="fa fa-phone"></i><span>068 774 418</span></span><span class="phone"><i class="fa fa-phone"></i><span>078 858 518</span></span></div>
             <div class="header__top--search">
               <form class="search-form">
-                <input type="search" placeholder="поиск" id="header-search">
+                <input type="text" placeholder="поиск" id="header-search">
                 <label for="header-search"><i class="fa fa-search"></i></label>
               </form>
             </div>
@@ -61,7 +61,7 @@
                   </button>
                   <div class="header__search">
                     <form class="search-form">
-                      <input type="search" placeholder="поиск" id="header-search">
+                      <input type="text" placeholder="поиск" id="header-search">
                       <label for="header-search"><i class="fa fa-search"></i></label>
                     </form>
                   </div>
@@ -988,6 +988,36 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="request1">
+      <h3 class="dialog__header">Запрос информации по товару</h3>
+      <p class="dialog__subheader">Оставьте заявку, менеджер свяжется с вами в ближайшее время</p>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <input type="text" required name="request1-name" placeholder="Имя" id="request1-name">
+        </div>
+        <div class="dialog__form--row">
+          <input type="tel" required name="request1-tel" placeholder="Телефон" id="request1-tel">
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__accent btn-block nomrg">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="request2">
+      <h3 class="dialog__header">Можете связаться по телефону<br><span class="danger">069534564</span></h3>
+      <p class="dialog__subheader">или оставить заявку,<br>менеджер свяжется с вами в ближайшее время</p>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <input type="text" required name="request2-name" placeholder="Имя" id="request2-name">
+        </div>
+        <div class="dialog__form--row">
+          <input type="tel" required name="request2-tel" placeholder="Телефон" id="request2-tel">
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__accent btn-block nomrg">Отправить</button>
+        </div>
+      </form>
     </div>
     <!-- End Modals -->
     <!-- Base Scripts -->

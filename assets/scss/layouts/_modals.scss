@@ -27,6 +27,7 @@
       font-size: 24px;
     }
 
+
     &--slider {
       .owl-nav {
         font-family: 'FontAwesome';
@@ -115,7 +116,7 @@
 
   &__header {
     font-size: 24px;
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 400;
     margin: 0 0 30px;
     text-align: center;
@@ -128,6 +129,11 @@
     }
   }
 
+  &__subheader {
+    margin: 0 0 20px;
+    text-align: center;
+    color: $c_4;
+  }
   &__form {
     hr {
       display: block;

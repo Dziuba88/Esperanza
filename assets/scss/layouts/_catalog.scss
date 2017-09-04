@@ -34,7 +34,17 @@
             border-bottom: none;
             position: relative;
 
-            @media #{$tablet-down} {font-size: 14px;}
+            @media #{$tablet-down} {
+              font-size: 14px;
+              span {
+                width: 120px;
+                text-align: left;
+              }
+
+              svg {width: 60px !important;}
+            
+            
+            }
 
 
             &:after {

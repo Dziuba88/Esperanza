@@ -73,7 +73,7 @@ a {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   line-height: 1;
   text-decoration: none;
@@ -87,6 +87,7 @@ a {
   border: none;
   border-radius: 6px;
   transition: .3s ease-in-out;
+  
 
   &-block {
     width: 100%;

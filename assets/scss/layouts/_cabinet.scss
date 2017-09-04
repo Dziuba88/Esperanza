@@ -80,6 +80,8 @@
     color: #fff;
     background-color: $c_1;
     padding: 10px 0;
+
+    .summ {font-weight: 400 !important;}
   }
 
   .date {
@@ -96,6 +98,7 @@
     width: 25%;
     padding: 0 30px 0 10px;
     position: relative;
+    font-weight: 600;
 
     .fa {
       position: absolute;
@@ -167,15 +170,23 @@
     line-height: 20px;
     text-transform: uppercase;
 
-    th {font-weight: 400;}
+    th {font-weight: 400;
+    &:nth-child(5) {
+        font-weight: 600;
+      }
+    
+    
+    }
+
+
   }
 
   tfoot {
     font-size: 14px;
     line-height: 20px;
+    font-weight: 600;
 
     th {
-      font-weight: 400;
 
       p {
         margin: 0;
@@ -228,6 +239,7 @@
       &:nth-child(5) {
         width: 25%;
         padding-right: 10px;
+        font-weight: 600;
       }
     }
 

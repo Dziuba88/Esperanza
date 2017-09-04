@@ -154,6 +154,28 @@ a(href="#feedback").feed.popup-form: span Как мы можем улучшит�
                 button.btn.btn__accent Купить
             .catalog__grid--item__title
               a(href="catalog-item.html") 185/75 R-16C Bontyre BT-228
+#request1.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Запрос информации по товару
+  p.dialog__subheader Оставьте заявку, менеджер свяжется с вами в ближайшее время
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      input(type="text" required name="request1-name" placeholder="Имя")#request1-name
+    .dialog__form--row
+      input(type="tel" required name="request1-tel" placeholder="Телефон")#request1-tel
+    .dialog__form--row.controls
+      button.btn.btn__accent.btn-block.nomrg Отправить
+
+#request2.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Можете связаться по телефону<br>
+    span.danger 069534564
+  p.dialog__subheader или оставить заявку,<br>менеджер свяжется с вами в ближайшее время
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      input(type="text" required name="request2-name" placeholder="Имя")#request2-name
+    .dialog__form--row
+      input(type="tel" required name="request2-tel" placeholder="Телефон")#request2-tel
+    .dialog__form--row.controls
+      button.btn.btn__accent.btn-block.nomrg Отправить
 
 
 

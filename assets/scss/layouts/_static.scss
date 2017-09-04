@@ -34,6 +34,7 @@
         margin: 0;
         text-align: center;
         width: 100%;
+        font-weight: 400;
 
         span {
           display: block;
@@ -48,11 +49,12 @@
     &--body {
       background-color: #fff;
       padding: 40px 0;
+      font-family: $normal;
 
       dl {
         display: block;
         margin: 0 auto;
-        width: 220px;
+        width: 230px;
         padding: 0;
 
         dt, dd {

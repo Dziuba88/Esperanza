@@ -58,6 +58,7 @@
         th {
           text-align: left;
           padding: 10px 5px;
+          font-weight: 400;
 
           &:nth-child(4) {
             text-align: right;
@@ -68,9 +69,9 @@
 
       .delete {
         display: block;
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
         transition: $transition;
         position: relative;
         cursor: pointer;
