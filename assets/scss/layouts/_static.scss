@@ -118,6 +118,10 @@
         text-transform: uppercase;
         letter-spacing: .05em;
         font-weight: 700;
+        text-align: center;
+        display: block;
+        padding: 10px;
+        line-height: 20px;
         @media #{$mobile-screen} {width: 100%;}
       }
     }

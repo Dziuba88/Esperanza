@@ -20,8 +20,8 @@ function initMaps() {
     zoom: 15,
     center: {lat: 47.0262839, lng: 28.8554296},
     //disableDefaultUI: true,
-    draggable: false,
-    scrollwheel: false
+    draggable: true,
+    scrollwheel: true
   });
 
   var infowindow = new google.maps.InfoWindow({
@@ -38,11 +38,11 @@ function initMaps() {
   });
 
 
-  map.addListener('center_changed', function() {
+  /*map.addListener('center_changed', function() {
     window.setTimeout(function() {
       map.panTo(marker.getPosition());
     }, 100);
-  });
+  });*/
 };
 
 
