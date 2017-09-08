@@ -33,12 +33,12 @@ block main
               .row
                 .col.md-7
                   dl
-                    dt Индекс нагрузки:
-                    dd 75
-                    dt Индекс скорости:
-                    dd Т
-                    dt Норма слойности:
-                    dd 25
+                    dt.tooltip(title="Индекс экономичности" data-arrow="true") Индекс нагрузки:
+                    dd.tooltip(title="Индекс экономичности" data-arrow="true") 75
+                    dt.tooltip(title="Индекс экономичности" data-arrow="true") Индекс скорости:
+                    dd.tooltip(title="Индекс экономичности" data-arrow="true") Т
+                    dt.tooltip(title="Индекс экономичности" data-arrow="true") Норма слойности:
+                    dd.tooltip(title="Индекс экономичности" data-arrow="true") 25
                 .col.md-5
                   #fb-root
                   script.
@@ -52,13 +52,13 @@ block main
                   .fb-share-button(data-href='https://developers.facebook.com/docs/plugins/', data-layout='button_count', data-action='like', data-size='large', data-show-faces='false', data-share='true')
                 .col.md-12
                   ul
-                    li
+                    li.tooltip(title="Индекс экономичности" data-arrow="true")
                       span.tyre: svg: use(xlink:href="#tyre-1")
                       span.index C
-                    li
+                    li.tooltip(title="Индекс экономичности" data-arrow="true")
                       span.tyre: svg: use(xlink:href="#tyre-2")
                       span.index A
-                    li
+                    li.tooltip(title="Индекс экономичности" data-arrow="true")
                       span.tyre: svg: use(xlink:href="#tyre-3")
                       span.index 71
         .col.sm-12.b__pad

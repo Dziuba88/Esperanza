@@ -6,6 +6,11 @@
   margin: 40px auto;
   position: relative;
   //border: 8px solid $c_cyan;
+  .basket__list--table thead th, .basket__list--table tbody tr td {
+    padding: 5px 15px;
+
+    &:last-child {padding: 5px;}
+  }
 
 
   &.large {

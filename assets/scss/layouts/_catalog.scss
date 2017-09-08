@@ -658,20 +658,20 @@
 
         .fa {
           margin-left: .5em;
-          color: $c_5;
+          opacity: .5;
           transition: $transition;
+
+          &:before {content: "\f0dc";}
         }
 
-        &:hover {
-          color: $c_3;
-        }
-
-        &.active {
+        &.up, &.down {
           color: $c_1;
-          .fa {
-            color: $c_3;
-          }
+          .fa {opacity: 1;}
         }
+        
+        &.up .fa:before {content: "\f0de";}
+        
+        &.down .fa:before {content: "\f0dd";}
         
       }
 
@@ -691,14 +691,16 @@
             margin: 0;
             border-radius: 5px;
             border: 1px solid $c_5;
-            color: $c_1;
+            color: $c_4;
 
             .fa {
               margin-right: .5em;
+              opacity: .5;
+              transition: $transition
             }
 
-            &:hover {
-              color: $c_3;
+            &:hover .fa {
+              opacity: 1;
             
             }
 
@@ -706,9 +708,7 @@
 
           &:checked + label {
             color: $c_1;
-            .fa {
-              color: $c_3;
-            }
+            .fa {opacity: 1;}
           }
         }
       }
@@ -945,7 +945,6 @@
         }
 
         dd {
-          width: 40%;
         }
 
         dt {

@@ -282,11 +282,20 @@ nav {
 */
 
 
-label.error {
+/*label.error {
   color: $c_3 !important;
-}
+}*/
 input.error, textarea.error {
   border-color: $c_3 !important;
+}
+
+span.error {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    display: block;
+    color: #db5750;
 }
 
 

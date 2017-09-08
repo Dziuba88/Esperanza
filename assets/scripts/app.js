@@ -64,6 +64,7 @@ $(document).ready(function() {
   };
 
   if($(".validate__form").length) {
+    $.validator.messages.required = 'Заполните правильно поле';
     $('.validate__form').each(function() {
       $(this).validate({
         focusInvalid: false,
@@ -71,6 +72,7 @@ $(document).ready(function() {
         errorPlacement: function(error, element) {{
           $( element ).parent().find('label').addClass("error");
           $( element ).addClass("error");
+          error.insertAfter( element );
         }}
       });
     });
@@ -78,9 +80,24 @@ $(document).ready(function() {
 
   if($(".price-sort").length) {
     $('.price-sort').click(function (event) {
-      event.preventDefault()
-      $(this).toggleClass('active');
-      return false;
+      if ($(this).hasClass('off')) {
+        event.preventDefault();
+        $(this).addClass('up');
+        $(this).removeClass('off');
+        return false;
+      };
+      if ($(this).hasClass('up')) {
+        event.preventDefault();
+        $(this).addClass('down');
+        $(this).removeClass('up');
+        return false;
+      };
+      if ($(this).hasClass('down')) {
+        event.preventDefault();
+        $(this).addClass('off');
+        $(this).removeClass('down');
+        return false;
+      };
     });
   };
 
