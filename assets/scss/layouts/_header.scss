@@ -372,7 +372,7 @@
   .navbar__content ul li {
     display: block;
     width: 100%;
-    border-bottom: 1px solid $c_5;
+    border-bottom: 1px solid rgba(#fff, .25);
     &:last-child {border-bottom: none;}
 
     a {
