@@ -138,7 +138,7 @@ $(document).ready(function() {
 
   if($(".brands__slider").length) {
     $('.brands__slider').owlCarousel({
-      loop:true,
+      loop:false,
       stagePadding:60,
       nav: true,
       navText: ['',''],
@@ -155,7 +155,7 @@ $(document).ready(function() {
 
   if($(".catalog__similar--slider").length) {
     $('.catalog__similar--slider').owlCarousel({
-      loop:true,
+      loop:false,
       nav: true,
       navText: ['',''],
       mouseDrag: false,
