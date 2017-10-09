@@ -8,6 +8,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .mainContent {flex:1;}
+
+  min-height: 100vh;
+
   @media #{$tablet-down} {
     font-size: 14px;
   }

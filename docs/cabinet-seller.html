@@ -85,275 +85,277 @@
     </header>
     <!-- End Header -->
     <!-- Main Content -->
-    <div class="cabinet__content">
-      <div class="container">
-        <nav class="cabinet__content--tabs">
-          <ul>
-            <li class="active"><a aria-controls="cabinet__tab--1" data-toggle="tab">История заказов</a></li>
-            <li><a aria-controls="cabinet__tab--2" data-toggle="tab">Дебиторская задолжность</a></li>
-          </ul>
-        </nav>
-        <div class="tab-content">
-          <div class="tab-pane fade in active" id="cabinet__tab--1">
-            <div class="panel-group">
-              <div class="panel-group_header">
-                <div class="date">Дата</div>
-                <div class="count">Количество</div>
-                <div class="summ">Итого (леев)</div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading" role="button" data-toggle="dropdown">
-                  <div class="date">14.05.2017</div>
-                  <div class="count">8</div>
-                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+    <main class="mainContent">
+      <div class="cabinet__content">
+        <div class="container">
+          <nav class="cabinet__content--tabs">
+            <ul>
+              <li class="active"><a aria-controls="cabinet__tab--1" data-toggle="tab">История заказов</a></li>
+              <li><a aria-controls="cabinet__tab--2" data-toggle="tab">Дебиторская задолжность</a></li>
+            </ul>
+          </nav>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="cabinet__tab--1">
+              <div class="panel-group">
+                <div class="panel-group_header">
+                  <div class="date">Дата</div>
+                  <div class="count">Количество</div>
+                  <div class="summ">Итого (леев)</div>
                 </div>
-                <div class="panel-content">
-                  <div class="panel-body">
-                    <table class="order__table">
-                      <thead>
-                        <tr>
-                          <th> </th>
-                          <th>Название товара</th>
-                          <th>Цена (леев)</th>
-                          <th>Количество (штук)</th>
-                          <th>Итого (леев)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th>
-                            <p><span>Итого:</span><span>1000000 леев</span></p>
-                            <p><span>Доставка:</span><span>1000 леев</span></p>
-                            <p><span>К оплате:</span><span>101000 леев</span></p>
-                          </th>
-                        </tr>
-                      </tfoot>
-                    </table>
+                <div class="panel">
+                  <div class="panel-heading" role="button" data-toggle="dropdown">
+                    <div class="date">14.05.2017</div>
+                    <div class="count">8</div>
+                    <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                  </div>
+                  <div class="panel-content">
+                    <div class="panel-body">
+                      <table class="order__table">
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>Название товара</th>
+                            <th>Цена (леев)</th>
+                            <th>Количество (штук)</th>
+                            <th>Итого (леев)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th>
+                              <p><span>Итого:</span><span>1000000 леев</span></p>
+                              <p><span>Доставка:</span><span>1000 леев</span></p>
+                              <p><span>К оплате:</span><span>101000 леев</span></p>
+                            </th>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading" role="button" data-toggle="dropdown">
-                  <div class="date">14.05.2017</div>
-                  <div class="count">8</div>
-                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
-                </div>
-                <div class="panel-content">
-                  <div class="panel-body">
-                    <table class="order__table">
-                      <thead>
-                        <tr>
-                          <th> </th>
-                          <th>Название товара</th>
-                          <th>Цена (леев)</th>
-                          <th>Количество (штук)</th>
-                          <th>Итого (леев)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th>
-                            <p><span>Итого:</span><span>1000000 леев</span></p>
-                            <p><span>Доставка:</span><span>1000 леев</span></p>
-                            <p><span>К оплате:</span><span>101000 леев</span></p>
-                          </th>
-                        </tr>
-                      </tfoot>
-                    </table>
+                <div class="panel">
+                  <div class="panel-heading" role="button" data-toggle="dropdown">
+                    <div class="date">14.05.2017</div>
+                    <div class="count">8</div>
+                    <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                  </div>
+                  <div class="panel-content">
+                    <div class="panel-body">
+                      <table class="order__table">
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>Название товара</th>
+                            <th>Цена (леев)</th>
+                            <th>Количество (штук)</th>
+                            <th>Итого (леев)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th>
+                              <p><span>Итого:</span><span>1000000 леев</span></p>
+                              <p><span>Доставка:</span><span>1000 леев</span></p>
+                              <p><span>К оплате:</span><span>101000 леев</span></p>
+                            </th>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading" role="button" data-toggle="dropdown">
-                  <div class="date">14.05.2017</div>
-                  <div class="count">8</div>
-                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
-                </div>
-                <div class="panel-content">
-                  <div class="panel-body">
-                    <table class="order__table">
-                      <thead>
-                        <tr>
-                          <th> </th>
-                          <th>Название товара</th>
-                          <th>Цена (леев)</th>
-                          <th>Количество (штук)</th>
-                          <th>Итого (леев)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th>
-                            <p><span>Итого:</span><span>1000000 леев</span></p>
-                            <p><span>Доставка:</span><span>1000 леев</span></p>
-                            <p><span>К оплате:</span><span>101000 леев</span></p>
-                          </th>
-                        </tr>
-                      </tfoot>
-                    </table>
+                <div class="panel">
+                  <div class="panel-heading" role="button" data-toggle="dropdown">
+                    <div class="date">14.05.2017</div>
+                    <div class="count">8</div>
+                    <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                  </div>
+                  <div class="panel-content">
+                    <div class="panel-body">
+                      <table class="order__table">
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>Название товара</th>
+                            <th>Цена (леев)</th>
+                            <th>Количество (штук)</th>
+                            <th>Итого (леев)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th>
+                              <p><span>Итого:</span><span>1000000 леев</span></p>
+                              <p><span>Доставка:</span><span>1000 леев</span></p>
+                              <p><span>К оплате:</span><span>101000 леев</span></p>
+                            </th>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading" role="button" data-toggle="dropdown">
-                  <div class="date">14.05.2017</div>
-                  <div class="count">8</div>
-                  <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
-                </div>
-                <div class="panel-content">
-                  <div class="panel-body">
-                    <table class="order__table">
-                      <thead>
-                        <tr>
-                          <th> </th>
-                          <th>Название товара</th>
-                          <th>Цена (леев)</th>
-                          <th>Количество (штук)</th>
-                          <th>Итого (леев)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                        <tr>
-                          <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
-                          <td>315/70 R-22,5 Bontyre D-730</td>
-                          <td data-cell_mobile="Цена (леев)">750</td>
-                          <td data-cell_mobile="Количество (штук)">4</td>
-                          <td data-cell_mobile="Итого (леев)">3000</td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th> </th>
-                          <th>
-                            <p><span>Итого:</span><span>1000000 леев</span></p>
-                            <p><span>Доставка:</span><span>1000 леев</span></p>
-                            <p><span>К оплате:</span><span>101000 леев</span></p>
-                          </th>
-                        </tr>
-                      </tfoot>
-                    </table>
+                <div class="panel">
+                  <div class="panel-heading" role="button" data-toggle="dropdown">
+                    <div class="date">14.05.2017</div>
+                    <div class="count">8</div>
+                    <div class="summ">101000<i class="fa fa-chevron-down"> </i></div>
+                  </div>
+                  <div class="panel-content">
+                    <div class="panel-body">
+                      <table class="order__table">
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>Название товара</th>
+                            <th>Цена (леев)</th>
+                            <th>Количество (штук)</th>
+                            <th>Итого (леев)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                          <tr>
+                            <td><a href="catalog-item.html"><img class="tooltip" src="img/item_image(760x760).png" alt="" title="подробнее" data-arrow="true"></a></td>
+                            <td>315/70 R-22,5 Bontyre D-730</td>
+                            <td data-cell_mobile="Цена (леев)">750</td>
+                            <td data-cell_mobile="Количество (штук)">4</td>
+                            <td data-cell_mobile="Итого (леев)">3000</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th>
+                              <p><span>Итого:</span><span>1000000 леев</span></p>
+                              <p><span>Доставка:</span><span>1000 леев</span></p>
+                              <p><span>К оплате:</span><span>101000 леев</span></p>
+                            </th>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="cabinet__tab--2">
-            <div class="seller">
-              <div class="row">
-                <div class="col sm-4 seller__header">Контрагент</div>
-                <div class="col sm-8 seller__body">Farm Meat Processing SRL</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">Срок кредита</div>
-                <div class="col sm-8 seller__body">60</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">ДЗ на 01.07.17</div>
-                <div class="col sm-8 seller__body">4 451 817,27</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">Покупка</div>
-                <div class="col sm-8 seller__body">1 070 334,01</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">Оплата</div>
-                <div class="col sm-8 seller__body">710 000,00</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">ДЗ на 31.07.17</div>
-                <div class="col sm-8 seller__body">4 812 151,28</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">Просроченный долг</div>
-                <div class="col sm-8 seller__body">2 381 072,45</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">Доля просроченного долга</div>
-                <div class="col sm-8 seller__body">49 %</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">Дата образования долга</div>
-                <div class="col sm-8 seller__body">03.04.2017</div>
-              </div>
-              <div class="row">
-                <div class="col sm-4 seller__header">Кол-во просроченный дней</div>
-                <div class="col sm-8 seller__body">59</div>
+            <div class="tab-pane fade" id="cabinet__tab--2">
+              <div class="seller">
+                <div class="row">
+                  <div class="col sm-4 seller__header">Контрагент</div>
+                  <div class="col sm-8 seller__body">Farm Meat Processing SRL</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">Срок кредита</div>
+                  <div class="col sm-8 seller__body">60</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">ДЗ на 01.07.17</div>
+                  <div class="col sm-8 seller__body">4 451 817,27</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">Покупка</div>
+                  <div class="col sm-8 seller__body">1 070 334,01</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">Оплата</div>
+                  <div class="col sm-8 seller__body">710 000,00</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">ДЗ на 31.07.17</div>
+                  <div class="col sm-8 seller__body">4 812 151,28</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">Просроченный долг</div>
+                  <div class="col sm-8 seller__body">2 381 072,45</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">Доля просроченного долга</div>
+                  <div class="col sm-8 seller__body">49 %</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">Дата образования долга</div>
+                  <div class="col sm-8 seller__body">03.04.2017</div>
+                </div>
+                <div class="row">
+                  <div class="col sm-4 seller__header">Кол-во просроченный дней</div>
+                  <div class="col sm-8 seller__body">59</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <!-- End Main Content -->
     <!-- Footer -->
     <footer class="footer">

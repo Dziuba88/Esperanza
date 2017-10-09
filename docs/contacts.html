@@ -86,54 +86,56 @@
     </header>
     <!-- End Header -->
     <!-- Main Content -->
-    <div class="static">
-      <div class="container">
-        <h1>Контактная информация</h1>
-        <div class="static__map" id="map"></div>
-        <div class="static__contacts">
-          <div class="row">
-            <div class="col sm-6 static__contacts--header">
-              <h2> <span>“ESPERANZA TYRES” SRL</span><small>Adresa: MD-2005, mun. Chișinău,</small><small>str. Feredeului 12 of. 19</small></h2>
-            </div>
-            <div class="col sm-6 static__contacts--body">
-              <dl>
-                <dt>Tel:</dt>
-                <dd>+(373) 22 27-12-33</dd>
-                <dt>Tel/Fax:</dt>
-                <dd>+(373) 22 27-05-34</dd>
-                <dt>Mobil:</dt>
-                <dd>+(373) 068 774 418</dd>
-                <dt>Mobil:</dt>
-                <dd>+(373) 078 858 518</dd>
-                <dt>E-mail:</dt>
-                <dd><a href="mailto:tyres@esperanza.md">tyres@esperanza.md</a></dd>
-              </dl>
+    <main class="mainContent">
+      <div class="static">
+        <div class="container">
+          <h1>Контактная информация</h1>
+          <div class="static__map" id="map"></div>
+          <div class="static__contacts">
+            <div class="row">
+              <div class="col sm-6 static__contacts--header">
+                <h2> <span>“ESPERANZA TYRES” SRL</span><small>Adresa: MD-2005, mun. Chișinău,</small><small>str. Feredeului 12 of. 19</small></h2>
+              </div>
+              <div class="col sm-6 static__contacts--body">
+                <dl>
+                  <dt>Tel:</dt>
+                  <dd>+(373) 22 27-12-33</dd>
+                  <dt>Tel/Fax:</dt>
+                  <dd>+(373) 22 27-05-34</dd>
+                  <dt>Mobil:</dt>
+                  <dd>+(373) 068 774 418</dd>
+                  <dt>Mobil:</dt>
+                  <dd>+(373) 078 858 518</dd>
+                  <dt>E-mail:</dt>
+                  <dd><a href="mailto:tyres@esperanza.md">tyres@esperanza.md</a></dd>
+                </dl>
+              </div>
             </div>
           </div>
+          <h1>Напишите нам</h1>
+          <form class="static__contactform validate__form">
+            <div class="row">
+              <div class="col sm-6">
+                <label>Имя</label>
+                <input type="text" required name="contact-name">
+              </div>
+              <div class="col sm-6">
+                <label>E-Mail</label>
+                <input type="email" required name="contact-mail">
+              </div>
+              <div class="col sm-6">
+                <label>Сообщение</label>
+                <textarea cols="30" rows="10" required name="contact-message"></textarea>
+              </div>
+              <div class="col sm-6 static__contactform--controls">
+                <div class="g-recaptcha" data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs"></div>
+                <button class="btn btn__accent">Отправить</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <h1>Напишите нам</h1>
-        <form class="static__contactform validate__form">
-          <div class="row">
-            <div class="col sm-6">
-              <label>Имя</label>
-              <input type="text" required name="contact-name">
-            </div>
-            <div class="col sm-6">
-              <label>E-Mail</label>
-              <input type="email" required name="contact-mail">
-            </div>
-            <div class="col sm-6">
-              <label>Сообщение</label>
-              <textarea cols="30" rows="10" required name="contact-message"></textarea>
-            </div>
-            <div class="col sm-6 static__contactform--controls">
-              <div class="g-recaptcha" data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs"></div>
-              <button class="btn btn__accent">Отправить</button>
-            </div>
-          </div>
-        </form>
       </div>
-    </div>
+    </main>
     <!-- End Main Content -->
     <!-- Footer -->
     <footer class="footer">
