@@ -139,6 +139,12 @@
   background-color: #fff;
   padding: 20px 0;
 
+  &__contacts {
+    display: none;
+
+
+  }
+
   &__wraper {
     display: flex;
     align-items: center;
@@ -260,7 +266,27 @@
     overflow: hidden;
   }
 
+  .navbar__contacts {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
 
+    a {
+      color: #fff;
+      display: inline-block;
+      white-space: nowrap;
+      padding: 5px 10px;
+      transition: .25s ease-in-out;
+
+      .fa {margin-right: .5em;}
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
 
 
   .header__top .btn {margin: 0 10px 0 0;}

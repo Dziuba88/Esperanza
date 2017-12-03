@@ -175,7 +175,15 @@ a.gotop {
     }
 }
 @media #{$mobile-screen} {
-  a.gotop, .feed {display: none;}
+  a.gotop.active {bottom: 100px;}
   .footer__adress {text-align: left;}  
   .footer__developer {text-align: center;}  
+  .feed {
+    height: 30px;
+    width: 200px;
+    padding: 5px 0;
+    margin-top: -15px;
+    left: -90px;
+  }
+  .feed span {font-size: 11px;}
 }
