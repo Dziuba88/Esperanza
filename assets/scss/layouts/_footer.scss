@@ -162,6 +162,7 @@ a.gotop {
   font-size: 18px;
   color: #fff;
   opacity: .5;
+  z-index: 9999;
 
   &.active {opacity: 1;bottom: 70px;}
 
@@ -175,7 +176,8 @@ a.gotop {
     }
 }
 @media #{$mobile-screen} {
-  a.gotop.active {bottom: 100px;}
+  a.gotop {right: 10px;}
+  a.gotop.active {bottom: 70px;}
   .footer__adress {text-align: left;}  
   .footer__developer {text-align: center;}  
   .feed {

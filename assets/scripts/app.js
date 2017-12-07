@@ -203,6 +203,7 @@ $(document).ready(function() {
       closeBtnInside: true,
       preloader: false,
       removalDelay: 300,
+      fixedContentPos: true,
       mainClass: 'my-mfp-zoom-in',
       callbacks: {
         open: function() {

@@ -41,18 +41,19 @@ a(href="#feedback").feed.popup-form: span Как мы можем улучшит�
 #feedback.zoom-anim-dialog.mfp-hide.dialog.large.user-forms
   h3.dialog__header Опрос
   form(action="").dialog__form.validate__form
-    .dialog__form--row
-      label.query Вопрос 1
-      .radiobox
-        input(type="radio" name="group1")#radiobox1_1
-        label(for="radiobox1_1") Ответ 1
-      .radiobox
-        input(type="radio" name="group1")#radiobox1_2
-        label(for="radiobox1_2") Ответ 2
-      .radiobox
-        input(type="radio" name="group1")#radiobox1_3
-        label(for="radiobox1_3") Ответ 3
-    hr
+    - for (var i=1; i<=10; i++)
+      .dialog__form--row
+        label.query Вопрос #{i}
+        .radiobox
+          input(type="radio" name="group1"+i id='#radiobox'+i+'_1')
+          label(for='#radiobox'+i+'_1') Ответ 1
+        .radiobox
+          input(type="radio" name="group1"+i id='#radiobox'+i+'_2')
+          label(for='#radiobox'+i+'_1') Ответ 2
+        .radiobox
+          input(type="radio" name="group1"+i id='#radiobox'+i+'_3')
+          label(for='#radiobox'+i+'_3') Ответ 3
+      hr
     .dialog__form--row
       label.query Вопрос 2
       .radiobox
